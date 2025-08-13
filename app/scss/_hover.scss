@@ -1,0 +1,501 @@
+@media (hover: hover) {
+    .reliable__item:hover {
+        
+        svg {
+            filter: drop-shadow(0px 7.07985px 47.9px rgba(242, 199, 145, 1));
+            path{
+                stroke: var(--color-gold-f2c791);
+            }
+        }
+        .reliable__item-text{
+            color: #fff;
+        }
+        .reliable__item-title{
+            color: var(--color-gold-f2c791);
+        }
+    }
+    .specialization__item-circle:hover {
+        &::before{
+            opacity: 1;
+        }
+    
+        &:after {
+            opacity: 1;
+            transition-delay: 300ms;
+        }
+    
+        svg path {
+            stroke: var(--color-gold-f2c791);
+        }
+    
+        .specialization__item-title{
+            color: var(--color-gold-f2c791);
+        }
+        .specialization__item-text{
+            color: white;
+        }
+    }
+    .header__connection-phone:hover {
+        color: var(--color-gold-f2c791);
+    }
+    
+    .top-item__link:hover {
+        color: var(--color-gold-f2c791);
+        
+        svg path {
+            stroke: var(--color-gold-f2c791);
+        }
+    }
+
+    .description-page:hover {
+        color: var(--color-gold-f2c791);
+    }
+
+    .footer {
+        &__item-link:hover{color: var(--color-gold-f2c791)}
+        &__info-item:has(a):hover,
+        &__body-item:has(a):hover {
+            color: var(--color-gold-f2c791);
+        }
+    }
+
+    .footer__message-link:hover svg {
+        circle {
+            stroke: var(--color-gold-f2c791);
+        }
+        path {
+            fill: var(--color-gold-f2c791);
+        }
+    }
+    .what-doing__slider-btn:hover {
+        background-color: #000;
+        .what-doing__slider-btn-arrow {
+            svg path {
+                fill: var(--color-gold-f2c791);
+            }
+        }
+    }
+    .result-work__slider-pagination-slide:hover {
+        .result-work__slider-pagination-slide-icon{
+            filter: drop-shadow(0px 0p 30px #F2C791);
+
+            svg{
+                path{
+                    &:nth-child(1) {
+                        fill: rgba(242, 199, 145, 0.1);
+                    }
+                    &:nth-child(2){
+                        fill: var(--color-gold-f2c791);
+                    }
+                }
+            }
+        }
+    }
+    .type-work__info-item:hover{
+        &::before{
+            background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        }
+    }
+    .type-work__info-item{
+        &:hover{
+            &:nth-child(1),
+            &:nth-child(4){
+                .type-work__info-title{
+                    color: #fff;
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(3){
+
+                .type-work__info-title{
+                    color: var(--color-dark-161718);
+                }
+            }
+            .type-work__info-title{
+                font-family: var(--ff-Roboto);
+                font-weight: 600;
+            }
+            &::before{
+                opacity: 0;
+            }
+            &::after{
+                opacity: 1;
+            }
+        }
+    }
+    .budget__info-price-button:hover {
+        background-color: #222222;
+
+        .budget__info-price-button-text{
+            color: var(--color-gold-f2c791);
+        }
+        
+        .budget__info-price-button-icon{
+            svg path {
+                stroke: #363636;
+            }
+        }
+    }
+    .quality-standards__btn:hover{
+        background-color: #222222;
+        color: var(--color-gold-f2c791);
+        
+        .quality-standards__btn-icon{
+            svg path {
+                stroke: #363636;
+            }
+        }
+    }
+    .quality-standards__item:hover {
+        z-index: 2;
+
+        &::before{
+            background-color: rgba(0,0,0,.5);
+        }
+    }
+
+    .info-company__button:hover {
+        background-color: var(--color-gold-f2c791);
+
+        // svg path {
+        //     stroke: #363636;
+        // }
+    }
+
+    .services__btn:hover {
+        background-color: var(--color-gold-f2c791);
+        // .services__btn-text{
+        //     color: var(--color-gold-f2c791);
+        // }
+    }
+
+    .services__item a:hover {
+        .services__item-title{
+            font-family: var(--ff-Roboto);
+            color: var(--color-gold-f2c791);
+        }
+        .services__item-price{
+            color: #fff;
+        }
+        .services__item-icon{
+            svg path {
+                stroke: var(--color-gold-f2c791);
+            }
+        }
+        .services__item-button{
+            background: var(--color-gold-f2c791);
+            color: var(--color-dark-161718);
+        }
+    }
+
+    .services__item:has(a:hover)::before{
+        opacity: 1;
+    }
+
+    .top-page__sub-title:hover,
+    .what-doing__description:hover {
+        color: var(--color-gold-f2c791);
+    }
+    
+    .services__description:hover {
+        color: var(--color-gold-f2c791);
+    }
+
+    .services__box-title:hover {
+        color: var(--color-gold-f2c791);
+    }
+
+    .result-work__description:hover {
+        color: var(--color-gold-f2c791);
+    }
+    
+    .specialization-links__item{
+        &:hover {
+            .specialization-links__item-link{
+                transform: translateX(-89%);
+                opacity: 1;
+                pointer-events: all;
+            }
+            &:nth-child(1){
+                .specialization-links__item-link{
+                    transform: translateX(-75%);
+                }
+            }
+            &:nth-child(5){
+                .specialization-links__item-link{
+                    transform: translateX(-87%);
+                }
+            }
+            &:nth-child(6){
+                .specialization-links__item-link{
+                    transform: translateX(-87%);
+                }
+            }
+            &:nth-child(7){
+                .specialization-links__item-link{
+                    transform: translateX(-87%);
+                }
+            }
+            &:nth-child(8){
+                .specialization-links__item-link{
+                    transform: translateX(-87%);
+                }
+            }
+            &:nth-child(9){
+                .specialization-links__item-link{
+                    transform: translateX(-93%);
+                }
+            }
+            .specialization-links__item-text{
+                transform: translateX(-100%);
+            }
+        }
+        &.specialization-links__item_not-hover {
+            pointer-events: none;
+        }
+    }
+
+    .contacts .specialization-links__item{
+        &:hover {
+            .specialization-links__item-link{
+                transform: translateX(-108%);
+            }
+        }
+    }
+
+    .button-menu{
+        &:hover {
+            .button-menu__line{
+                &:nth-child(1),
+                &:nth-child(3) {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+
+    .specialization-links__link:hover .specialization-links__link-text{
+        opacity: 1;
+    }
+
+    .comercial-style__button:hover {
+        .comercial-style__button-icon{
+            svg path {
+                stroke: var(--color-gold-f2c791);
+            }
+        }
+        .comercial-style__button-text{
+            opacity: 1;
+        }
+    }
+
+    .comercial-style__image-parent:hover {
+        .comercial-style__image-parent-text{
+            opacity: 1;
+        }
+        background-color: #EBA661;
+    }
+
+    .about__button:hover {
+        background-color: rgb(255, 102, 1);
+        .about__button-text{
+            opacity: 1;
+        }
+        .about__button-icon{
+            svg path {
+                stroke: var(--color-gold-f2c791);
+            }
+        }
+    }
+    
+    .about-employees__list.hover-animation-item .about-employees__item:hover {
+        .about-employees__item-ant{
+            opacity: 0;
+        }
+        .about-employees__item-inner{
+            transform: scale(1);
+        }
+    }
+
+    .btn-hover:hover {
+        color: var(--color-gold-f2c791);
+        border: 1px solid rgba(242, 199, 145, 0.01);
+        background: #1E1E1E;
+        box-shadow: 0px 10px 15.3px 1px rgba(242, 199, 145, 0.38);
+    }
+
+    .work__item{
+        &:hover {
+            background-color: #1B1B1B;
+    
+            .work__item-link{
+                background-color: #1B1B1B; 
+                font-family: var(--ff-Roboto);
+                &::after{
+                    opacity: 1;
+                    filter: blur(47.95px);
+                }
+            }
+        }
+    }
+
+    .type-work:has(.type-work__info-item:nth-child(1):hover){
+        .type-work-circle-row-1{
+            background:
+                linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) !important
+            ;
+        
+        }
+    }
+    .type-work:has(.type-work__info-item:nth-child(2):hover){
+        .type-work-circle-row-2{
+            background:
+                linear-gradient(0deg, rgba(242, 199, 145, 0.7), rgba(242, 199, 145, 0.7)) !important
+            ;
+        }
+    }
+    .type-work:has(.type-work__info-item:nth-child(3):hover){
+        .type-work-circle-row-4{
+            background:
+            linear-gradient(0deg, rgba(66, 66, 66, 0.86), rgba(66, 66, 66, 0.86)) !important
+            ;
+        }
+    }
+
+    .what-doing__slider-btn:hover {
+        transform: scale(1.2);
+    }
+
+    .clients__item:hover {
+        filter: grayscale(0);
+    }
+    
+    .specialization-links__link:hover{
+        background-color:rgba(255, 102, 1, 1);
+        svg path {
+            stroke: #EBA661; 
+        }
+    }
+
+    .info-prices__image:hover .info-prices__image-text {
+        opacity: 1;
+    }
+
+    .comercial-style__button:hover{
+        background-color: rgba(255, 102, 1, 1);
+        svg path {
+            stroke: #EBA661; 
+        }
+    }
+    .about-box__parent-img:hover .about-box__parent-img-text{
+        opacity: 1;
+    }
+
+    .stage-work__slide-info:hover {
+        background-color: #1e23cc;
+    }
+    .modal-feedback__form-description a:hover {
+        color: #EBA661;
+    }
+    .save-money__btn.save-money__btn_design-page:hover {
+        box-shadow: unset;
+        border: none;
+        background-color: #ff6601;
+    }
+}
+
+@media (hover: none) {
+    .specialization__item-circle:active {
+        &::before{
+            opacity: 1;
+        }
+    
+        &:after {
+            opacity: 1;
+            transition-delay: 300ms;
+        }
+    
+        svg path {
+            stroke: var(--color-gold-f2c791);
+        }
+    
+        .specialization__item-title{
+            color: var(--color-gold-f2c791);
+        }
+        .specialization__item-text{
+            color: white;
+        }
+    }
+
+    .btn-hover:active {
+        color: var(--color-gold-f2c791);
+        border: 1px solid rgba(242, 199, 145, 0.01);
+        background: #1E1E1E;
+        box-shadow: 0px 10px 15.3px 1px rgba(242, 199, 145, 0.38);
+    }
+
+    .reliable__item:active {
+        svg {
+            filter: drop-shadow(0px 7.07985px 47.9px rgba(242, 199, 145, 1));
+            path{
+                stroke: var(--color-gold-f2c791);
+            }
+        }
+        .reliable__item-text{
+            color: #fff;
+        }
+        .reliable__item-title{
+            color: var(--color-gold-f2c791);
+        }
+    }
+
+    .work__item{
+        &:active {
+            background-color: #1B1B1B;
+    
+            .work__item-link{
+                background-color: #1B1B1B; 
+                font-family: var(--ff-Roboto);
+                &::after{
+                    opacity: 1;
+                    filter: blur(47.95px);
+                }
+            }
+        }
+    }
+
+    .top-item__link:active {
+        color: var(--color-gold-f2c791);
+        
+        svg path {
+            stroke: var(--color-gold-f2c791);
+        }
+    }
+
+
+    .services__item:active {
+        border: transparent;
+
+        .services__item-title{
+            font-family: var(--ff-Roboto);
+            color: var(--color-gold-f2c791);
+            font-size: 14px;
+        }
+        .services__item-price{
+            color: #fff;
+        }
+        .services__item-icon{
+            svg path {
+                stroke: var(--color-gold-f2c791);
+            }
+        }
+        .services__item-button{
+            background: var(--color-gold-f2c791);
+            color: var(--color-dark-161718);
+        }
+    }
+
+    .services__item:active(a:hover)::before{
+        opacity: 1;
+    }
+}

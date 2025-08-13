@@ -1,0 +1,62 @@
+.clients {
+    margin-bottom: 200px;
+    &.mb-30{
+        margin-bottom: 30px;
+    }
+    overflow: hidden;
+
+    &.pt-121{
+        padding-top: 121px; 
+    }
+
+    &-top{
+        margin-bottom: 111px;
+    }
+    // .clients__title
+
+    &__title {
+    }
+
+    // .clients__inner
+
+    &__inner {
+    }
+
+    // .clients__list
+
+    &__list {
+        display: flex; 
+        overflow: hidden;
+        white-space: nowrap;
+        gap: 22px;
+        // .clients__list_first
+
+        &_first {
+            margin-bottom: 20px;
+        }
+
+        // .clients__list_second
+
+        &_second {
+        }
+    }
+
+    // .clients__item
+
+    &__item {
+        // @include flex(column, center, center);
+        display: inline-block;
+        width: 198px;
+        min-height: 101px;
+        background-color: #18191A;
+        border-radius: 10px;
+
+        flex-shrink: 0;
+
+        margin-left: 26px;
+
+        transition: filter 300ms linear;
+
+        filter: grayscale(1);
+    }
+}

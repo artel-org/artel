@@ -1,0 +1,168 @@
+.guk2-parent{
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.guk2-item{
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    transform-origin: center;
+    transition: all 1000ms linear;
+}
+
+.guk2{
+    --time: .5s;
+
+    animation: guk2Skew var(--time) linear infinite;
+}
+
+.guk2-path{
+    transform-origin: left center;
+}
+
+.guk2-path-6{
+    animation: gukPath6 var(--time) linear infinite;
+}
+
+.guk2-path-4{
+    animation: gukPath4 var(--time) linear infinite;
+}
+.guk2-path-5{
+    animation: gukPath5 var(--time) linear infinite;
+}
+.guk2-path-3{
+    transform-origin: top center;
+    animation: gukPath3 var(--time) linear infinite;
+}
+.guk2-path-2{
+    animation: gukPath2 var(--time) linear infinite;
+}
+.guk2-path-1{
+    transform-origin: left center;
+    animation: gukPath1 var(--time) linear infinite;
+}
+
+
+@keyframes gukPath4 {
+    0%,100%{
+        transform: rotate(6deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+}
+@keyframes gukPath6 {
+    0%,100%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-3deg);
+    }
+}
+@keyframes gukPath2 {
+    0%,100%{
+        transform: rotate(4deg);
+    }
+    50%{
+        transform: rotate(-4deg);
+    }
+}
+@keyframes gukPath5 {
+    0%,100%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+}
+@keyframes gukPath3 {
+    0%,100%{
+        transform: rotate(6deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+}
+@keyframes gukPath1 {
+    0%,100%{
+        transform: rotate(4deg);
+    }
+    50%{
+        transform: rotate(-4deg);
+    }
+}
+@keyframes guk2Skew {
+    0%,100%{
+        transform: skew(2deg);
+    }
+    50%{
+        transform: skew(-2deg);
+    }
+}
+
+.guk2-item-1{
+    top: -10%;
+    left: -10%;
+    rotate: 140deg;
+}
+
+.guk2-item-2{
+    top: 30%;
+    right: -10%;
+    rotate: -80deg;
+}
+
+.guk2-item-3{
+    bottom: -10%;
+    left: 0%;
+    rotate: 45deg;
+}
+
+@keyframes gukItem1 {
+    0%{
+        top: -10%;
+        left: -10%;
+    }
+    100%{
+        top: 110%;
+        left: 110%;
+    }
+}
+@keyframes gukItem2 {
+    0%{
+        top: 30%;
+        right: -10%;
+    }
+    100%{
+        top: -10%;
+        right: 110%;
+    }
+}
+@keyframes gukItem3 {
+    0%{
+        bottom: -10%;
+        left: 0%;
+    }
+    100%{
+        bottom: 100%;
+        left: 110%;
+    }
+}
+
+.specialization-links:has(.guk2-hover:hover) {
+    .guk2-item-1{
+        animation: gukItem1 5s linear forwards;
+    }
+    
+    .guk2-item-2{
+        animation: gukItem2 3s linear forwards;
+    }
+    
+    .guk2-item-3{
+        animation: gukItem3 3s linear forwards;
+    }
+}

@@ -1,0 +1,135 @@
+.birds{
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
+    --time: 0.3s;
+}
+.birds-item{
+    position: absolute;
+
+    height: max-content;
+    width: max-content;
+    transform-origin: center;
+    transition: all 1000ms linear;
+
+    svg {
+        width: 300px;
+        height: 350px;
+        
+        path {fill: #03254A;}
+    }
+}
+
+.wing-path-1{
+    transform-origin: top center;
+    animation: wingpath1 var(--time) linear infinite;
+}
+.wing-path-2{
+    transform-origin: left center;
+    animation: wingpath2 var(--time) linear infinite;
+}
+.wing-path-3{
+    animation: wingpath3 var(--time) linear infinite;
+    transform-origin: right center;
+}
+.wing-path-4{
+    transform-origin: right center;
+    animation: wingpath4 var(--time) linear infinite;
+}
+.wing-path-5{
+    transform: translateX(60px);
+}
+
+@keyframes wingpath1 {
+    0%,100%{
+        transform: translate(-88px, 107px);
+        rotate: -18deg;
+    }
+    50%{
+        transform: translate(0px, 0px);
+        rotate: 0deg;
+    }
+}
+@keyframes wingpath2 {
+    0%, 100%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: 0deg;
+    }   
+}
+@keyframes wingpath3 {
+    0%, 100%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: 0deg;
+    }   
+}
+@keyframes wingpath4 {
+    0%,100%{
+        transform: translate(50px, 9px);
+        rotate: 19deg;
+    }
+    50%{
+        transform: translate(0px, 0px);
+        rotate: 0deg;
+    }
+}
+
+.birds-item-1{
+    left: -20%;
+    top: 30%;
+}
+.birds-item-2{
+    right: -20%;
+    top: 80%;
+
+    svg {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes birds1{
+    0%{
+        left: -20%;
+        top: 30%;
+    }
+    50%{
+        left: 50%;
+        top: 15%;
+    }
+    100%{
+        left: 110%;
+        top: -10%;
+    }
+}
+@keyframes birds2 {
+    0%{
+        right: -20%;
+        top: 80%;
+    }
+    50%{
+        right: 50%;
+        top: 25%;
+    }
+    100%{
+        right: 110%;
+        top: -10%;
+    }
+}
+
+
+.specialization-links:has(.birds-hover:hover) {
+    .birds-item-1{
+        animation-delay: .5s;
+        animation: birds1 2s linear forwards;
+    }
+    .birds-item-2{
+        animation-delay: 0s;
+        animation: birds2 2.5s linear forwards;
+    }
+}

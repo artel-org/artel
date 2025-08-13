@@ -1,0 +1,265 @@
+.bug {
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.bug-item {
+    position: absolute;
+
+    height: max-content;
+    width: max-content;
+    transform-origin: center;
+    transition: all 1000ms linear;
+
+    &-1{
+        bottom: -10%;
+        left: 70%;
+        rotate: 5deg;
+        animation-delay: 4s;
+    }
+
+    &-2{
+        rotate: -10deg;
+        bottom: -10%;
+        left: 30%;
+        animation-delay: 5s;
+    }
+
+    &-3{
+        bottom: -10%;
+        left: 45%;
+    }
+}
+
+@keyframes bug3 {
+    0%{
+        bottom: -10%;
+        left: 45%;
+    }
+    40%{
+        bottom: 50%;
+        left: 43%;
+    }
+    50%{
+        bottom: 50%;
+        left: 43%;
+    }
+    75%{
+        bottom: 75%;
+        left: 40%;
+    }
+    100%{
+        bottom: 110%;
+        left: 35%;
+    }
+}
+
+@keyframes bug2 {
+    0%{
+        rotate: -10deg;
+        bottom: -10%;
+        left: 30%;
+    }
+    50%{
+        rotate: -20deg;
+        bottom: 60%;
+        left: 30%;
+    }
+    55%{
+        rotate: -90deg;
+        bottom: 60%;
+        left: 30%;
+    }
+    60%{
+        rotate: -180deg;
+        bottom: 60%;
+        left: 30%;
+    }
+    75%{
+        rotate: -180deg;
+        bottom: 50%;
+        left: 30%;
+    }
+    100%{
+        rotate: -180deg;
+        bottom: -20%;
+        left: 20%;
+    }
+}
+
+@keyframes bug1 {
+    0%{
+        bottom: -10%;
+        left: 70%;
+        rotate: 5deg;
+    }
+    50%{
+        left: 80%;
+        bottom: 55%;
+        rotate: 20deg;
+    }
+    55%{
+        left: 80%;
+        bottom: 55%;
+        rotate: 30deg;
+    }
+    60%{
+        left: 80%;
+        bottom: 55%;
+        rotate: 40deg;
+    }
+    70%{
+        left: 80%;
+        bottom: 55%;
+        rotate: 35deg;
+    }
+    75%{
+        left: 85%;
+        bottom: 60%;
+        rotate: 45deg;
+    }
+    80%{
+        left: 90%;
+        bottom: 65%;
+        rotate: 50deg;
+    }
+    85%{
+        left: 90%;
+        bottom: 67%;
+        rotate: 60deg;
+    }
+    90%{
+        left: 95%;
+        bottom: 69%;
+        rotate: 65deg;
+    }
+    100%{
+        left: 120%;
+        bottom: 70%;
+        rotate: 70deg;
+    }
+
+}
+
+.specialization-links:has(.bug-hover:hover) {
+    .bug-item-1 {
+        animation-delay: 4s;
+        animation: bug1 3s linear forwards;
+    }
+    .bug-item-2 {
+        animation-delay: 5s;
+        animation: bug2 3s linear forwards;
+    }
+    .bug-item-3{
+        animation: bug3 3s linear forwards;
+    }
+}
+
+.guk{
+    --time: .1s;
+    animation: gukScew var(--time) linear infinite forwards;
+}
+
+.guk-path{
+    transform-origin: center;
+}
+
+/* верхняя лапка справа */
+.guk-path-4{
+    rotate: 20deg;
+    animation: gukpath4 calc(var(--time) + 0.1s) linear infinite forwards;
+}
+
+/* нижняя лапка справа */
+.guk-path-1{
+    rotate: 6deg;
+    animation: gukpath1 var(--time) linear infinite forwards;
+}
+
+/* ==== ==== */
+/* верхняя лапка слева */
+.guk-path-3{
+    rotate: 10deg;
+    animation: gukpath3 calc(var(--time) + 0.1s) linear infinite forwards;
+}
+/* нижняя лапка слева */
+.guk-path-2{
+    rotate: 20deg;
+    animation: gukpath2 calc(var(--time) + 0.1s) linear infinite forwards;
+}
+
+/* левый ус */
+.guk-path-5{
+    animation: gukpath5 calc(var(--time) / 1.5) linear infinite forwards;
+}
+
+.guk-path-6{
+    animation: gukpath6 calc(var(--time) / 1.5) linear infinite forwards;
+}
+
+/* animation */
+@keyframes gukpath4 {
+    0%, 100%{
+        rotate: 20deg;
+    }
+    50%{
+        rotate: -10deg;
+    }
+}
+
+@keyframes gukpath1 {
+    0%, 100%{
+        rotate: 6deg;
+    }
+    50%{
+        rotate: -20deg;
+    }
+}
+
+@keyframes gukpath3 {
+    0%, 100%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: -20deg;
+    }
+}
+
+@keyframes gukpath2 {
+    0%,100% {
+        rotate: 20deg;
+    }
+    50%{
+        rotate: -6deg;
+    }
+}
+
+@keyframes gukpath5 {
+    0%,100%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 3deg;
+    }
+}
+
+@keyframes gukpath6 {
+    0%,100%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: -3deg;
+    }
+}
+
+@keyframes gukScew {
+    0%, 100%{
+        transform: skew(5deg,0);
+    }
+    50%{
+        transform: skew(-5deg,0);
+    }
+}

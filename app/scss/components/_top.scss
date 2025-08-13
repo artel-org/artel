@@ -1,0 +1,108 @@
+.top {
+    padding-top: 108px;
+    padding-bottom: 137px;
+    margin-bottom: 5px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
+    &-inner {
+        @include flex(row, flex-start,flex-start);
+    }
+    &-box{
+        padding-top: 80px;
+    }
+    &-list {
+        margin-bottom: 102px;
+    }
+    &-item {
+		// .top-item__link
+		&__link {
+            max-width: max-content;
+            width: 100%;
+            
+            @include flex(row, center,flex-start);
+            gap: 14px;
+
+            font-family: var(--ff-Rurik);
+            font-size: 52.39px;
+            font-weight: 400;
+            line-height: 68.1px;
+            letter-spacing: 0.08em;
+            color: var(--color-gray-303030);
+            
+            transition: color 300ms linear;
+
+            // svg path {
+            //     transition: stroke 100ms ease;
+            // }
+		}
+		// .top-item__text
+
+		&__text {
+            font-family: var(--ff-Roboto);
+            font-size: 20.74px;
+            font-weight: 400;
+            line-height: 24.3px;
+            white-space: nowrap;
+
+            .br-mobile{
+                display: none;
+            }
+		}
+
+        &.is-active {
+            color: #fff;
+
+            .top-item__link{
+                color: #fff;
+            }
+
+            margin-top: 37px;
+        }
+
+        svg {
+            transform: translateX(-100vw);
+            animation: showIcon 1.5s linear forwards;
+        }
+        &:nth-child(1){
+            svg {
+                animation-delay: 0.3s;
+            }
+        }
+        &:nth-child(2){
+            svg {
+                animation-delay: 0.1s;
+            }
+        }
+        &:nth-child(3){
+            svg {
+                animation-delay: 0.5s;
+            }
+        }
+    }
+    &-image {
+        // position: relative;
+        // right: 56px;
+        overflow: hidden;
+
+        svg {
+            position: relative;
+            right: 56px;
+        }
+    }
+    
+    &.mb-95{
+        margin-bottom: 95px;
+    }
+}
+
+@keyframes showIcon {
+    0%{
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

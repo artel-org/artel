@@ -1,0 +1,155 @@
+<script type="importmap" defer>
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js"
+        }
+    }
+</script>
+<script type="module">
+    // библиотеки
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/controls/OrbitControls.js';
+    import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/loaders/FBXLoader.js';
+
+    // родительский элемент для добавления на страницу
+    const parentElement =  document.querySelector(".reliable__image"); 
+    // элемент над которым происходит прокрутка
+    const container = document.querySelector(".reliable__inner");
+
+    // переменные для мыши
+    // state 1
+    // let targetX = -2;
+    // let targetY = 1.8;
+    // state 2
+    let model;
+    let mouseX = 0;
+    let mouseY = 0;
+    // Центрированное значение мыши
+    let targetRotationX = 0;
+    let targetRotationY = 0;
+    let shouldReset = false;
+    // state 2
+    container.addEventListener('mousemove', (event) => {
+        shouldReset = false;
+
+        const rect = container.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width;
+        const y = (event.clientY - rect.top) / rect.height;
+
+        targetRotationY = (x - 0.5) * Math.PI;
+        targetRotationX = (y - 0.5) * Math.PI * 0.3;
+    });
+    container.addEventListener('mouseleave', () => {
+        shouldReset = true; // запускаем возврат к дефолту
+    });
+        
+    // state 1
+    // container.addEventListener('mousemove', (event) => {
+    //     const rect = container.getBoundingClientRect();
+    //     const x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+    //     const y = ((event.clientY - rect.top) / rect.height) * 2 - 1;
+
+    //     // Умножаем на коэффициенты, чтобы ограничить движение камеры
+    //     // по дефолту 1.5
+    //     targetX = x * 1.5;
+    //     targetY = y * 1.5;
+    // });
+
+
+    const createThreeDElement = () => {
+        const scene = new THREE.Scene();
+        // scene.background = new THREE.Color(0xf0f0f0);
+
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(5,  1.8, -2);
+        // 1-й параметр отдаление камеры
+        // 2-й параметр по вертикали
+        // 3-йэлемент по по горизонтали 
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true});
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        // document.body.appendChild(renderer.domElement);
+        parentElement.appendChild(renderer.domElement);
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+
+        const light = new THREE.HemisphereLight(0xffffff, 0xffffff, 1.2);
+        scene.add(light);
+
+        const dirLight = new THREE.DirectionalLight(0xffffff, 0);
+        dirLight.position.set(5, 10, 0);
+        scene.add(dirLight);
+
+        // Загрузка FBX модели с рёбрами
+        const loader = new FBXLoader();
+
+        loader.load('01.fbx', (object) => {
+            object.scale.set(0.00025, 0.00025, 0.00025);
+            model = object;
+                object.traverse((child) => {
+                    if (child.isMesh) {
+                    // Полностью скрываем материал
+                    child.material.transparent = true;
+                    child.material.opacity = 0;
+                    child.material.depthWrite = false;
+
+                    // Используем EdgesGeometry, НО на склонированной геометрии (важно!)
+                    const edges = new THREE.EdgesGeometry(child.geometry.clone(), 30);// 1 — угол резкости
+                    const line = new THREE.LineSegments(
+                        edges,
+                        new THREE.LineBasicMaterial({ color: 0xffffff, linewidth: 1 }) // ← можно усилить цвет/ширину
+                    );
+                    // Прикрепляем линию прямо к МЕШУ (чтобы повторяла повороты и масштаб)
+                    child.add(line);
+                    }
+                });
+
+                scene.add(model);
+                animate();
+            }, undefined, (error) => {
+            console.error('Ошибка загрузки FBX:', error);
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+
+            // Плавно приближаем позицию камеры к целевой
+            // state 1
+            // console.log(camera.position);
+            // camera.position.x += (targetX - camera.position.x) * 0.05;
+            // camera.position.y += (targetY - camera.position.y) * 0.05;
+            // camera.position.z = 5;
+
+            // camera.lookAt(0, 0, 0); // смотреть в центр сцены
+            // controls.update();
+            // renderer.render(scene, camera);
+            if (shouldReset) {
+                // Плавное возвращение к нулевому положению
+                model.rotation.y += (0 - model.rotation.y) * 0.05;
+                model.rotation.x += (0 - model.rotation.x) * 0.05;
+            } else {
+                // Плавное вращение по мыши
+                model.rotation.y += (targetRotationY - model.rotation.y) * 0.05;
+                model.rotation.x += (targetRotationX - model.rotation.x) * 0.05;
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    }
+
+    // вызов генерации
+    if(THREE && parentElement && GLTFLoader && OrbitControls && FBXLoader && container) {
+        createThreeDElement();
+    } else {
+        console.warn("Генерация 3д - модели не была выполнена");
+    }
+</script>

@@ -1,0 +1,159 @@
+.slizens{
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.slizen{
+    animation: slizenScale .5s linear infinite;
+}
+
+.slizen-item{
+    position: absolute;
+
+    height: max-content;
+    width: max-content;
+    transform-origin: center;
+    transition: all 1000ms linear;
+}
+
+@keyframes slizenScale {
+    0%,100%{
+        transform: scaleY(0.98);
+    }
+    50%{
+        transform: scaleY(1.1);
+    }
+    75%{
+        transform: scaleY(1);
+    }
+}
+
+.slizen-item-1{
+    rotate: 90deg;
+    top: 10%;
+    left: -10%;
+}
+.slizen-item-2{
+    top: -10%;
+    left: 50%;
+    rotate: 185deg;
+}
+.slizen-item-3{
+    bottom: -10%;
+    right: 25%;
+    rotate: 0deg;
+}
+
+@keyframes slizen1 {
+    0%{
+        top: 45%;
+        left: -10%;
+    }
+    10%{
+        top: 45%;
+        left: 20%;
+    }
+    15%{
+        top: 45%;
+        left: 20%;
+    }
+    25%{
+        top: 45%;
+        left: 45%;
+    }
+    30%{
+        top: 45%;
+        left: 45%;
+    }
+    50%{
+        top: 45%;
+        left: 70%;
+    }
+    60%{
+        top: 45%;
+        left: 70%;
+    }
+    100%{
+        top: 45%;
+        left: 110%;
+    }
+}
+@keyframes slizen2 {
+    0%{
+        top: -10%;
+        left: 50%;
+    }
+    25%{
+        top: 35%;
+        left:45%;
+    }
+    30%{
+        top: 35%;
+        left: 45%;
+    }
+    50%{
+        top: 65%;
+        left: 45%;
+    }
+    60%{
+        top: 65%;
+        left: 45%;
+    }
+    75%{
+        top: 90%;
+        left: 45%;
+    }
+    80%{
+        top: 90%;
+        left: 45%;
+    }
+    100%{
+        top: 110%;
+        left: 45%;
+    }
+}
+@keyframes slizen3 {
+    0%{
+        bottom: -10%;
+        right: 25%;
+    }
+    10%,15%{
+        bottom: 25%;
+        right: 25%;
+    }
+    20%,22%{
+        bottom: 40%;
+        right: 25%;
+    }
+    25%{
+        bottom: 50%;
+        right: 25%;
+    }
+    50%{
+        bottom: 50%;
+        right: 25%;
+    }
+    65%{
+        bottom: 75%;
+        right: 30%;
+    }
+    100%{
+        bottom: 110%;
+        right: 30%;
+    }
+}
+
+.specialization-links:has(.slizen-hover:hover) {
+    .slizen-item-1{
+        animation: slizen1 4s linear forwards;
+    }
+    .slizen-item-2{
+        animation: slizen2 4s linear forwards;
+    }
+    .slizen-item-3{
+        animation: slizen3 3s linear forwards;
+    }
+}

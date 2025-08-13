@@ -1,0 +1,417 @@
+.sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../image/no-deleted/decor/top-page-design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100vw;
+    width: 100%;
+    height: 100svh;
+    position: relative;
+    overflow: hidden;
+
+    min-height: 768px;
+
+    &__title{
+        font-family: var(--ff-Rurik);
+        font-size: 135.13px;
+        font-weight: 400;
+        line-height: 148.64px;
+        text-align: center;
+        color: white;
+
+        &.sections__title_normal-font{
+            font-family: var(--ff-Roboto);
+            position: absolute;
+        }
+    }
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    border-radius: 0;
+    transform-origin: center center;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+}
+
+.cursor span {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: #fff;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+}
+
+.blok-text-hovering{
+    width: calc(100vw - 15px);
+    min-height: 768px;
+    height: 100svh;
+    background-image: url(../image/no-deleted/decor/top_bg_design_tarakans.svg);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.cursor-circle {
+    position: absolute;
+    width:  470px;
+    height: 470px;
+    /* background-color: ; */
+    border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+
+    text-align: center;
+    line-height: 50px;
+    pointer-events: none;
+
+    animation: morph 6s linear infinite;
+    background-color: #fff;
+
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes morph{
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    }
+    34% {
+        border-radius: 70% 30% 46% 54%/30% 29% 71% 70%;
+    }
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+}
+
+.tarakan{
+    opacity: 0;
+}
+
+.tarakans-1 img{
+    width: 100px;
+}
+.tarakans-2 img{
+    width: 50px;
+}
+.tarakans-3 img{
+    width: 40px;
+}
+.tarakans-4 img{
+    width: 150px;
+}
+.tarakans-5 img{
+    width: 50px;
+}
+.tarakan{
+    pointer-events: none;
+}
+.tarakan img {
+    pointer-events: none;
+    animation: bounceTarakan 1s linear infinite;
+}
+
+@keyframes bounceTarakan {
+    0%,20%,40%,60%,80%, 100%{
+        transform: rotate(5deg);
+    }
+    10%, 30%, 50%, 70%, 90%{
+        transform: rotate(0deg);
+    }
+}
+
+.tarakans-1{
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 0;
+    left: 0;
+
+    transition: bottom 300ms ease, left 300ms ease;
+    animation: firstTarakan 3.5s linear infinite;
+}
+
+@keyframes firstTarakan {
+    0%{
+        bottom: 0%;
+        left: 0%;
+    }
+    100% {
+        bottom: 100%;
+        left: 100%;
+    }
+}
+
+
+.tarakans-2{
+    position: absolute;
+    transform: rotate(150deg);
+    top: 0%;
+    left: 20%;
+
+    animation: secondTarakan 2s linear infinite;
+}
+
+@keyframes secondTarakan {
+    0%{
+        top: 0%;
+        left: 20%;
+    }
+    100% {
+        top: 100%;
+        left: 60%;
+    }
+}
+
+.tarakans-4{
+    position: absolute;
+    transform: rotate(5deg);
+    bottom: 0;
+    left: 40%;
+    animation: threeTarakan 2s linear infinite;
+}
+
+@keyframes threeTarakan {
+    0%{
+        bottom: 0;
+        left: 50%;
+    }
+    100% {
+        bottom: 100%;
+        left: 55%;
+    }
+}
+
+.tarakans-3{
+    position: absolute;
+    transform: rotate(-25deg);
+    bottom: 5%;
+    left: 90%;
+
+    animation: fourarakan 2.5s linear infinite;
+}
+
+@keyframes fourarakan {
+    0%{
+        bottom: 5%;
+        left: 90%;
+    }
+    100% {
+        bottom: 100%;
+        left: 55%;
+    }
+}
+
+.tarakans-5 {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 15%;
+    left: 5%;
+
+    animation: fiveTarakan 2.5s linear infinite;
+}
+
+@keyframes fiveTarakan {
+    0%{
+        top: 15%;
+        left: 5%;
+    }
+    100% {
+        top: 25%;
+        left: 100%;
+    }
+}
+
+.tarakans{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.sections-decor-title .sections__title{
+    line-height: 144px;
+}
+
+.sections-decor-title span {
+    opacity: 0;
+}
+.sections__title {
+    letter-spacing: 0;
+}
+.sections__title span:not(:first-child) {
+    position: relative;
+    left: -15px;
+}
+
+.tarakan-svg path {
+    position: relative;
+}
+
+.tarakan-svg .path-1,
+.tarakan-svg .path-11{
+    animation: path-1 1s linear infinite;
+}
+.tarakan-svg .path-2{
+    animation: path-2 1s linear infinite;
+}
+.tarakan-svg .path-3{
+    animation: path-3 0.5s linear infinite;
+}
+.tarakan-svg .path-4{
+    transform-origin: center;
+    animation: path-4 0.5s linear infinite;
+}
+.tarakan-svg .path-12 {
+    animation: path-5 0.5s linear infinite;
+}
+.tarakan-svg .path-13 {
+    animation: path-6 0.5s linear infinite;
+}
+.tarakan-svg .path-14 {
+    animation: path-6 0.5s linear infinite;
+}
+
+.tar {
+    --time: 0.1s;
+    animation: tarScew 1.5s linear infinite forwards;
+}
+.tar-path{
+    transform-origin: center center;
+}
+/* правая сторона */
+.tar-path-1{
+    /* rotate: 13deg; */
+    // animation-delay: .12s;
+    animation: path1 var(--time) linear infinite forwards;
+}
+
+.tar-path-3{
+    /* rotate: 30deg; */
+    // animation-delay: .1s;
+    animation: path3 var(--time) linear infinite forwards;
+}
+
+.tar-path-5{
+    /* rotate: 15deg; */
+    animation: path5 var(--time) linear infinite forwards;
+}
+/* левая сторона */
+.tar-path-2{
+    /* rotate: 2deg; */
+    animation: path2 var(--time) linear infinite forwards;
+}
+.tar-path-4{
+    /* rotate: 15deg; */
+    animation: path4 var(--time) linear infinite forwards;
+}
+.tar-path-6{
+    /* rotate: 10deg; */
+    animation: path6 var(--time) linear infinite forwards;
+}
+/* aniamtion */
+/* верхняя лапка с права */
+@keyframes path1 {
+    0%, 100%{
+        rotate: 13deg;
+    }
+    50%{
+        rotate: -3deg;
+    }
+}
+/* верхняя лапка с лева */
+@keyframes path2 {
+    0%, 100%{
+        rotate: 2deg;
+    }
+    50%{
+        rotate: -12deg;
+    }
+}
+/* средняя лапка с права */
+@keyframes path3 {
+    0%, 100%{
+        rotate: 35deg;
+    }
+    50%{
+        rotate: -1deg;
+    }
+}
+/* cредняя лапка с лева */
+@keyframes path4 {
+    0%, 100%{
+        rotate: 15deg;
+    }
+    50%{
+        rotate: -20deg;
+    }
+}
+/* нижняя лапка с права */
+@keyframes path5 {
+    0%,100% {
+        rotate: 15deg;
+    }
+    50% {
+        rotate: -10deg;
+    }
+}
+/* нижняя лапка с лева */
+@keyframes path6 {
+    0%, 100%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: -10deg;
+    }
+}
+/* смещение таракана */
+@keyframes tarScew {
+    0%, 100%{
+        transform: skew(7deg,0);
+    }
+    50%{
+        transform: skew(-7deg,0);
+    }
+}
+
+.cursor{
+    mix-blend-mode: difference;
+}
+.blok-text-hovering{
+    mix-blend-mode: difference;
+}
+.cursor-circle {
+    background-blend-mode: difference;
+}
+.tarakan svg{
+    mix-blend-mode: difference;
+}
+.tarakans {
+    mix-blend-mode: difference;
+}
+
+.sections__title-page{
+    display: none;
+    margin: 0 auto;
+}

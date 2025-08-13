@@ -1,0 +1,192 @@
+.quality-standards {
+    background-color: #ECF0F1;
+    padding-top: 125px;
+    padding-bottom: 122px;
+    // .quality-standards__inner
+
+    &__inner {
+    }
+
+    // .quality-standards__top
+
+    &__top {
+        // margin-bottom: 112px;
+        margin-bottom: 60px;
+    }
+
+    // .quality-standards__title
+
+    &__title {
+
+    }
+
+    // .quality-standards__description
+
+    &__description {
+        color: rgba(194, 199, 201, 1);
+    }
+
+    // .quality-standards__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2px;
+
+        margin-bottom: 30px;
+    }
+
+    // .quality-standards__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        &.quality-standards__item_big{
+            grid-row: span 2;
+            padding-bottom: 60px;
+            padding-left: 53px;
+
+            .quality-standards__item-box:nth-child(1) {
+                margin-top: 159px;
+                margin-bottom: auto;
+            }
+        }
+        
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:nth-child(1){
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            &::before{
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+        }
+        &:nth-child(2){
+            border-top-right-radius: 20px;
+
+            &::before{
+                border-top-right-radius: 20px;
+            }
+            padding-bottom: 53px;
+            padding-left: 33px;
+        }
+        &:nth-child(3){
+            &::before{
+                border-bottom-right-radius: 20px
+            }
+            border-bottom-right-radius: 20px;
+            padding-bottom: 64px;
+            padding-left: 33px;
+        }
+
+        position: relative;
+
+        min-height: 295px;
+
+        &::before{
+            content: '';
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            
+            background-color: rgba($color: #000000, $alpha: 70%);
+        }
+
+        transition: transform 300ms ease;
+        transform-style: preserve-3d;
+    }
+
+    // .quality-standards__item-box
+
+    &__item-box {
+    }
+
+    // .quality-standards__item-item
+
+    &__item-title {
+        font-family: var(--ff-Roboto);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 27.84px;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 15px;
+    }
+
+    // .quality-standards__item-text
+
+    &__item-text {
+        font-family: var(--ff-Roboto);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20.88px;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+    }
+
+    // .quality-standards__buttons
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .quality-standards__btn
+
+    &__btn {
+        min-width: 200px;
+        min-height: 200px;
+
+        font-family: var(--ff-Roboto);
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 33.6px;
+        text-align: center;
+        color: #B4BABC;
+
+        border-radius: 49% 61% 93% 38%/44% 70% 47% 82%;
+
+        animation: morph2 6s linear infinite;
+        position: relative;
+
+        background: #E2EBED;
+
+        &.quality-standards__btn_big{
+            min-width: 300px;
+            min-height: 300px;
+
+            p{
+                position: relative;
+                z-index: 2;
+            }
+        }
+
+        transition: background 300ms linear, color 300ms linear;
+    }
+
+    // .quality-standards__btn-icon
+
+    &__btn-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        svg path {
+            fill: transparent;
+        }
+    }
+}

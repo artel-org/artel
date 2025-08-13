@@ -1,0 +1,195 @@
+.header {
+    &.header_blue{
+        background-color: #0021FE;
+        padding: 13px 0px 28px 0px;
+
+        .header__inner{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .header__connection{
+            display: none;
+        }
+    }
+    &.header_black{
+        background-color: transparent;
+        padding-block: 10px;
+        .logo{
+            font-size: 30px;
+        }
+    }
+    max-width: 100%;
+    width: 100%;
+
+    &_fixed {
+        width: 100%;
+        max-width: 100%;
+        
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    // .header_transparent
+
+    &_transparent {
+        background: rgba(46, 46, 46, 0.21);
+        backdrop-filter: blur(7.5px);
+        border-bottom: 1px solid rgba(46, 46, 46, 0.21);
+        padding-block: 12px 12px;
+    }
+
+    &__inner {
+        @include flex(row, center, flex-start);
+
+        &.header__inner_spc-between{
+            justify-content: space-between;
+        }
+    }
+    // .header__connection
+
+    &__connection {
+        margin-left: auto;
+        margin-right: 0;
+
+        @include flex(column, flex-end, flex-end);
+    }
+
+    // .header__connection-phone
+
+    &__connection-phone {
+        font-family: var(--ff-Roboto);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        color: #fff;
+
+        margin-bottom: 4px;
+
+        transition: color 300ms linear;
+    }
+
+    // .header__connection-text
+
+    &__connection-text {
+        font-family: var(--ff-Roboto);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        color: rgba($color: #fff, $alpha: 0.5);
+
+        position: relative;
+        padding-left: 16px;
+
+        &::before{
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+
+            position: absolute;
+            left: 0;
+            top: 5px;
+
+            background-color: var(--color-gold-f2c791);
+        }
+
+
+        &::after{
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+
+            position: absolute;
+            left: 0;
+            top: 5px;
+
+            background-color: rgb(242, 199, 145, 0.5);
+
+            transform: scale(1);
+
+            animation: scaleAnimation 2s ease-in-out infinite; /* Анимация */
+        }
+    }
+
+    // .header__call-back-btn
+
+    &__call-back-btn {
+        padding: 15.5px 25px;
+        font-family: var(--ff-Roboto);
+        color: var(--color-gray-303030);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.09px;
+
+        margin-left: 25px;
+        
+
+    }
+
+    // .header__button-burger
+
+    &__button-burger {
+        display: block;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        gap: 4px;
+        height: 20px;
+
+        margin-right: 5px;
+        margin-left: 21px;
+        position: relative;
+        top: 2px;
+        
+        &-line {
+            display: block;
+            // height: 3px;
+            padding-bottom: 3px;
+            width: 26.67px;
+            border-radius: 50px;
+            background-color: rgba(242, 199, 145, 1);
+
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    &.header_hidden{
+        transition: transform 300ms linear;
+    }
+
+    &.is-hidden{
+        transform: translateY(calc(var(--height, 100px) * -1));
+    }
+}
+
+.logo {
+    font-family: var(--ff-Rurik);
+    font-size: 50.04px;
+    font-weight: 400;
+    line-height: 50.04px;
+    color: var(--color-gold-f2c791);
+
+
+    position: relative;
+    top: 5px;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

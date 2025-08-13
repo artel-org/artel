@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Model Demo</title>
+</head>
+<body>
+  <canvas id="scene" style="width:100%; height:500px;"></canvas>
+
+  <script type="module">
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js';
+    import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/loaders/GLTFLoader.js';
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 500, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('scene') });
+    renderer.setSize(window.innerWidth, 500);
+
+    const light = new THREE.HemisphereLight(0xffffff, 0x444444);
+    scene.add(light);
+
+    const loader = new GLTFLoader();
+    loader.load('model.glb', (gltf) => {
+      scene.add(gltf.scene);
+      camera.position.z = 5;
+      animate();
+    }, undefined, (error) => {
+      console.error('Ошибка загрузки модели:', error);
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      renderer.render(scene, camera);
+    }
+  </script>
+</body>
+</html>

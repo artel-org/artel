@@ -1,0 +1,151 @@
+.slider-drag-image {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    height: 100%;
+
+    .images {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .images .img1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .images .img2 {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+    }
+
+    .images .img1,
+    .images .img2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        background-position: center;
+        background-repeat: no-repeat;
+        // background-size: cover;
+
+        overflow: hidden;
+    }
+
+    .slider {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .slider input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        background: none;
+        -webkit-appearance: none;
+    }
+
+    .slider input::-webkit-slider-thumb {
+        width: 5px;
+        background: none;
+        -webkit-appearance: none;
+        cursor: col-resize;
+    }
+
+    .slider .drag-line {
+        width: 4px;
+        position: absolute;
+        left: 50%;
+        pointer-events: none;
+        height: 100%;
+    }
+
+    .slider .drag-line::before,
+    .slider .drag-line::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background: #fff;
+        height: 100%;
+    }
+
+    .slider .drag-line::before {
+        top: 0;
+    }
+
+    .slider .drag-line::affter {
+        bottom: 0;
+    }
+
+    .slider .drag-line span {
+        width: 45px;
+        height: 45px;
+        background: #ffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slider .drag-line span::before,
+    .slider .drag-line span::after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .slider .drag-line span::before {
+        left: 0px;
+        background-image: url(../image/no-deleted/decor/pr-arrow-left.svg);
+        border-left-color: white;
+    }
+
+    .slider .drag-line span::after {
+        right: 0px;
+        background-image: url(../image/no-deleted/decor/pr-arrow-right.svg);
+        border-top-color: white;
+    }
+
+    &__title{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        color: white;
+        
+        text-wrap: nowrap;
+        
+        &.slider-drag-image__title_decor{
+            font-family: var(--ff-Rurik);
+        }
+        &.slider-drag-image__title_normal {
+            font-family: var(--ff-Roboto);
+        }
+
+        padding-left: 30px;
+        padding-bottom: 54px;
+
+        position: relative;
+        z-index: 2;
+    }
+}

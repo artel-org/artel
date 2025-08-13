@@ -1,0 +1,3827 @@
+.engineering {
+    max-width: 1368px;
+    width: 100%;
+    margin: 0 auto 241px;
+    position: relative;
+
+    // .engineering__top
+    &__top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 149px;
+    }
+
+    // .engineering__top-box
+    &__top-box {}
+
+    &__top-moon {
+        position: relative;
+        top: -54px;
+        left: 56px;
+    }
+
+    &__top-title {
+        position: relative;
+        top: -24px;
+        left: 22px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__top-description {
+        position: relative;
+        top: -30px;
+    }
+
+    &__top-sun {
+        position: relative;
+        top: -56px;
+        right: 32px;
+
+        .sun-beam {}
+    }
+
+    // .engineering__body
+    &__body {
+        display: flex;
+        position: relative;
+    }
+
+    // .engineering__box
+    &__body-tree {
+        position: relative;
+        top: -18px;
+        left: -18px;
+
+        opacity: 0;
+        transform: translateY(30px);
+
+        transition:
+            opacity 300ms linear,
+            transform 600ms linear;
+    }
+
+    &__box {
+
+        // .engineering__box_column
+
+        &_column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 9.7vw;
+
+            position: relative;
+            top: -40px;
+        }
+    }
+
+    // .engineering__planet
+    &__planet {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        margin-bottom: 65px;
+
+        img {
+            max-width: 70%;
+            margin-top: 7px;
+            margin-left: -1px;
+        }
+    }
+
+    &__body-odin {
+        position: absolute;
+        top: 138px;
+        left: 166px;
+    }
+
+    // .engineering__button
+    &__button {
+        margin-bottom: 40px;
+        transition: opacity 300ms linear;
+
+        font-family: var(--ff-Rurik);
+        font-size: 72px;
+        -webkit-text-stroke: 2px #838383;
+        /* Обводка для WebKit браузеров */
+        text-stroke: 2px #838383;
+        /* Обводка для других браузеров */
+        -webkit-text-fill-color: transparent;
+        /* Прозрачная заливка для WebKit */
+        text-fill-color: transparent;
+        /* Прозрачная заливка для других */
+        color: transparent;
+        /* На всякий случай, для полной уверенности */
+
+        transition:
+            color 300ms linear,
+            text-fill-color 300ms linear;
+    }
+
+    // .engineering__grass
+    &__grass {
+        transform: translateY(30px);
+        opacity: 0;
+
+        transition:
+            opacity 300ms linear,
+            transform 600ms linear;
+
+        &.is-animate,
+        &.is-animate-move {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    // .engineering__snake
+    &__snake {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        position: absolute;
+        top: -49px;
+        right: 70px;
+
+        opacity: 0;
+        transform: translateY(40px);
+
+        transition:
+            opacity 300ms linear,
+            transform 600ms linear;
+
+        &-1 {
+            position: relative;
+            top: 17px;
+            left: 7px;
+        }
+
+        &-text {
+            &-body {
+                position: absolute;
+                bottom: 79px;
+                right: 16px;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 1px;
+
+                font-family: var(--ff-Rurik);
+                font-size: 34px;
+                color: #000;
+            }
+        }
+    }
+
+    // .engineering__book
+    &__book {
+        max-width: max-content;
+        position: absolute;
+        bottom: 59px;
+        right: 74px;
+
+        transform: translateY(70px);
+        opacity: 0;
+
+        transition:
+            transform 600ms linear,
+            opacity 700ms linear;
+    }
+
+    &__body-woomen {
+        position: relative;
+        top: 140px;
+        right: -22px;
+    }
+
+    &__star {
+        position: absolute;
+
+        &-1 {
+            top: 128px;
+            left: 96px;
+        }
+
+        &-2 {
+            top: 108px;
+            left: 155px;
+        }
+
+        &-3 {
+            top: 129px;
+            left: 236px;
+        }
+
+        &-4 {
+            top: 115px;
+            left: 276px;
+        }
+
+        &-5 {
+            top: 350px;
+            left: 36px;
+        }
+
+        &-6 {
+            top: 345px;
+            left: 126px;
+        }
+
+        &-7 {
+            top: 365px;
+            left: 208px;
+        }
+
+        &-8 {
+            top: 343px;
+            left: 258px;
+        }
+
+        &-9 {
+            top: 78px;
+            right: 307px;
+        }
+
+        &-10 {
+            top: 401px;
+            right: 498px;
+        }
+
+        &-11 {
+            top: 364px;
+            right: 78px;
+        }
+
+        &-12 {
+            top: 322px;
+            right: 217px;
+        }
+
+        &-13 {
+            top: 328px;
+            right: 262px;
+        }
+
+        &-14 {
+            top: 352px;
+            right: 287px;
+        }
+
+        &-15 {
+            top: 323px;
+            right: 317px;
+        }
+
+        &-16 {
+            top: 600px;
+            left: 502px;
+        }
+
+        &-17 {
+            top: 643px;
+            left: 529px;
+        }
+
+        &-18 {
+            top: 758px;
+            left: 579px;
+        }
+
+        &-19 {
+            top: 632px;
+            right: 549px;
+        }
+    }
+
+    &__herb {
+        position: absolute;
+
+        &-1 {
+            bottom: 39px;
+            left: -80px;
+        }
+
+        &-2 {
+            bottom: -36px;
+            left: 148px;
+        }
+
+        &-3 {
+            bottom: -58px;
+            left: 599px;
+        }
+
+        &-4 {
+            right: 421px;
+            bottom: -64px;
+        }
+
+        &-5 {
+            bottom: -29px;
+            right: 47px;
+        }
+
+        &-6 {
+            right: -106px;
+            bottom: 65px;
+        }
+    }
+
+    &__stars {
+        opacity: 0;
+        transition: opacity 500ms linear;
+
+        &.is-animate {
+            opacity: 1;
+        }
+    }
+
+    &__herbs {
+        opacity: 0;
+        transition: opacity 500ms linear;
+
+        &.is-animate {
+            opacity: 1;
+        }
+    }
+}
+
+// ======= eбучии анимации ======= //
+.header_black {
+    opacity: 0;
+}
+
+// .engineering__snake,
+// .engineering__book,
+// .engineering__button,
+// .engineering__grass{
+//     opacity: 0;
+// }
+// ======
+.engineering__top-title.is-animate {
+    animation: titlePosition 6s linear forwards;
+}
+
+@keyframes titlePosition {
+    0% {
+        transform: translateY(200px) scale(0.5);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.5;
+        transform: translateY(200px) scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(200px) scale(0.75);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(200px) scale(1);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+// =======
+.engineering__top-description {
+
+    // 20
+    svg path {
+        transform: translateY(70px);
+        transition: transform 300ms linear;
+
+        &:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        &:nth-child(2) {
+            transition-delay: 0.25s;
+        }
+
+        &:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        &:nth-child(4) {
+            transition-delay: 0.35s;
+        }
+
+        &:nth-child(5) {
+            transition-delay: 0.4s;
+        }
+
+        &:nth-child(6) {
+            transition-delay: 0.45s;
+        }
+
+        &:nth-child(7) {
+            transition-delay: 0.5s;
+        }
+
+        &:nth-child(8) {
+            transition-delay: 0.55s;
+        }
+
+        &:nth-child(9) {
+            transition-delay: 0.6s;
+        }
+
+        &:nth-child(10) {
+            transition-delay: 0.65s;
+        }
+
+        &:nth-child(11) {
+            transition-delay: 0.7s;
+        }
+
+        &:nth-child(12) {
+            transition-delay: 0.8s;
+        }
+
+        &:nth-child(13) {
+            transition-delay: 0.9s;
+        }
+
+        &:nth-child(14) {
+            transition-delay: 1s;
+        }
+
+        &:nth-child(15) {
+            transition-delay: 1.2s;
+        }
+
+        &:nth-child(16) {
+            transition-delay: 1.3s;
+        }
+
+        &:nth-child(17) {
+            transition-delay: 1.4s;
+        }
+
+        &:nth-child(18) {
+            transition-delay: 1.5s;
+        }
+
+        &:nth-child(19) {
+            transition-delay: 1.6s;
+        }
+
+        &:nth-child(20) {
+            transition-delay: 1.7s;
+        }
+    }
+
+    &.is-animate {
+        svg path {
+            transform: translateY(0px);
+        }
+    }
+}
+
+// ======
+.engineering__top-moon {
+    opacity: 0;
+    transform: translateY(-10px) translateX(-50vw);
+
+    &.is-animate {
+        animation: showMoon 2.5s linear forwards;
+    }
+
+    &.is-animate-rotate {
+        opacity: 1;
+        animation: rotateMoon 3s linear infinite;
+    }
+}
+
+@keyframes showMoon {
+    0% {
+        transform: translateY(-10px) translateX(-30vw);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(-15px) translateX(-300px);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translateY(-25px) translateX(-200px);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(-30px) translateX(-100px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+}
+
+.engineering__top-sun {
+    opacity: 0;
+    transform: translateY(-10px) translateX(-50vw);
+
+    &.is-animate {
+        animation: showSun 2.5s linear forwards;
+    }
+
+    &.is-animate-translate-item {
+        opacity: 1;
+        transform: translateY(0px) translateX(0vw);
+    }
+}
+
+@keyframes showSun {
+    0% {
+        transform: translateY(-10px) translateX(30vw);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(-15px) translateX(300px);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translateY(-25px) translateX(200px);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(-30px) translateX(100px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateMoon {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    20%,
+    40% {
+        transform: rotate(10deg);
+    }
+
+    80%,
+    60% {
+        transform: rotate(-10deg);
+    }
+}
+
+// ! анимация с глазами у солнца
+.engineering__top-sun {
+
+    .sun-eye-1,
+    .sun-eye-2 {
+        transition-delay: 1s;
+        transition-duration: 1s;
+        transition: d 2s ease;
+    }
+
+    .sun-beam {
+        position: relative;
+    }
+
+    &.is-animate-translate-item {
+
+        .sun-beam-1,
+        .sun-beam-2,
+        .sun-beam-3 {
+            animation: beamAnimation1 3s linear infinite;
+        }
+
+        .sun-beam-6,
+        .sun-beam-7,
+        .sun-beam-8 {
+            animation: beamAnimation2 3s linear infinite;
+        }
+
+        .sun-beam-5 {
+            animation: beamAnimation3 3s linear infinite;
+        }
+
+        .sun-beam-4 {
+            animation: beamAnimation4 3s linear infinite;
+        }
+    }
+}
+
+// ! появление блока с планетой 
+.engineering__planet {
+    opacity: 0;
+    transform: scale(0);
+    transition:
+        opacity 300ms linear,
+        transform 1200ms linear;
+
+    &.is-animate {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    &.is-animate-scale {
+        opacity: 1;
+        transform: scale(1);
+
+        svg {
+            animation: planetSVGScale 2s linear infinite;
+        }
+    }
+}
+
+// ! движение лучей солнца
+@keyframes beamAnimation1 {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes beamAnimation2 {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes beamAnimation3 {
+
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes beamAnimation4 {
+
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes planetSVGScale {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.engineering__button.is-animate {
+    opacity: 1;
+}
+
+// ! кнопка пуск
+.engineering__button {
+    display: flex;
+    gap: 10px;
+    transform: translateY(-20px);
+    opacity: 0;
+
+    transition:
+        opacity 300ms linear,
+        transform 600ms linear;
+
+    &-letter {
+        display: block;
+        opacity: 0;
+
+        transition:
+            opacity 350ms linear,
+            transform 600ms linear;
+    }
+
+    &-letter-1 {
+        --time-delay-animation: 0.2;
+        --px-default: 15px;
+        transform: rotate(30deg) translateY(-15px);
+        transition-delay: 0.2s;
+    }
+
+    &-letter-2 {
+        --time-delay-animation: 0.2;
+        --px-default: 32px;
+        transform: rotate(11deg) translateY(-25px);
+        transition-delay: 0.3;
+    }
+
+    &-letter-3 {
+        --time-delay-animation: 0.2;
+        --px-default: 32px;
+        transform: rotate(-11deg) translateY(-35px) translateX(-11px);
+        transition-delay: 0.4;
+    }
+
+    &-letter-4 {
+        --time-delay-animation: 0.2;
+        --px-default: 14px;
+        transform: rotate(-30deg) translateY(-45px) translateX(-9px);
+        transition-delay: 0.5;
+    }
+
+    &.is-animate {
+        opacity: 1;
+        transform: translateY(0px);
+
+        .engineering__button-letter {
+            opacity: 1;
+        }
+
+        .engineering__button-letter-1 {
+            transform: rotate(30deg) translateY(15px);
+        }
+
+        .engineering__button-letter-2 {
+            transform: rotate(11deg) translateY(32px);
+        }
+
+        .engineering__button-letter-3 {
+            transform: rotate(-11deg) translateY(32px) translateX(-11px);
+        }
+
+        .engineering__button-letter-4 {
+            transform: rotate(-30deg) translateY(14px) translateX(-9px);
+        }
+    }
+
+    &.is-animate-letter {
+        opacity: 1;
+        transform: translateY(0px);
+
+        .engineering__button-letter {
+            opacity: 1;
+
+            &-1 {
+                animation: letterAnimate1 1.5s infinite;
+            }
+
+            &-2 {
+                animation: letterAnimate2 2.5s infinite;
+            }
+
+            &-3 {
+                animation: letterAnimate3 3.5s infinite;
+            }
+
+            &-4 {
+                animation: letterAnimate4 4.5s infinite;
+            }
+        }
+    }
+}
+
+@keyframes letterAnimate1 {
+
+    0%,
+    100% {
+        transform: rotate(30deg) translateY(15px);
+    }
+
+    50% {
+        transform: rotate(30deg) translateY(20px);
+    }
+}
+
+@keyframes letterAnimate2 {
+
+    0%,
+    100% {
+        transform: rotate(11deg) translateY(32px);
+    }
+
+    50% {
+        transform: rotate(11deg) translateY(35px);
+    }
+}
+
+@keyframes letterAnimate3 {
+
+    0%,
+    100% {
+        transform: rotate(-11deg) translateY(32px) translateX(-11px);
+    }
+
+    50% {
+        transform: rotate(-11deg) translateY(35px) translateX(-11px);
+    }
+}
+
+@keyframes letterAnimate4 {
+
+    0%,
+    100% {
+        transform: rotate(-30deg) translateY(14px) translateX(-9px);
+    }
+
+    50% {
+        transform: rotate(-30deg) translateY(19px) translateX(-9px);
+    }
+}
+
+// ! движение линий внутри цветка
+.engineering__grass.is-animate-move {
+    animation: grassParentAnimate 2s linear infinite;
+    transform-origin: bottom center;
+
+    .grass-line {
+        &-1 {
+            animation: grassLine1 2s linear infinite;
+        }
+    }
+
+    .grass-main-line {}
+}
+
+@keyframes grassLine1 {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes grassParentAnimate {
+
+    0%,
+    100% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    50% {
+        transform: scaleX(1.035) scaleY(1.1);
+    }
+}
+
+@keyframes grassParentAnimate2 {
+
+    0%,
+    100% {
+        transform: rotate(0deg) skew(0deg, 0deg);
+    }
+
+    50% {
+        transform: rotate(2deg) skew(2deg, 0deg);
+    }
+}
+
+// ! анимация с одином
+.engineering__body-odin {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 130%;
+        height: 130%;
+        background-color: black;
+        bottom: -20%;
+        left: -20%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    &.is-animate {
+        &::before {
+            animation: saizeScaleHiddenBlock 0.5s linear forwards;
+        }
+    }
+}
+
+.engineering__body-woomen {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 130%;
+        height: 130%;
+        background-color: black;
+        bottom: -20%;
+        right: -20%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+
+    &.is-animate {
+        &::before {
+            animation: saizeScaleHiddenBlock 0.5s linear forwards;
+        }
+    }
+}
+
+@keyframes saizeScaleHiddenBlock {
+    0% {
+        width: 120%;
+        height: 120%;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.engineering__body-tree {
+    &.is-animate {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    &.is-animate-move {
+        opacity: 1;
+        animation: grassParentAnimate2 2s linear infinite;
+    }
+}
+
+.engineering__book {
+    &.is-animate {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    &.is-animate-debounce {
+        opacity: 1;
+        transform: translateY(0px);
+        animation: debounce 2s infinite ease-in-out;
+        animation-delay: 10s;
+    }
+}
+
+.engineering__snake {
+    &.is-animate {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.engineering__body-odin.is-animate-eye {
+
+    .odin-eye-1,
+    .odin-eye-2 {
+        transition: d 600ms ease-in-out;
+        // transition-delay: 300ms;
+    }
+}
+
+// ! глаз у девушки
+.women-line {
+    transition: d 600ms ease-in-out;
+}
+
+@keyframes debounce {
+
+    0%,
+    100% {
+        transform: scale(1.05) translateY(0px);
+    }
+
+    50% {
+        transform: scale(1) translateY(0px);
+    }
+}
+
+// ! текстс на кувшине
+.engineering__snake-text {
+    opacity: 0;
+    position: relative;
+    transition: opacity 300ms linear;
+
+    &-1 {
+        animation-delay: 0.2s;
+    }
+
+    &-2 {
+        animation-delay: 0.5s;
+    }
+
+    &-3 {
+        animation-delay: 1s;
+    }
+
+    &-4 {
+        animation-delay: 1.5s;
+    }
+
+    &-5 {
+        animation-delay: 2s;
+    }
+
+    &-6 {
+        animation-delay: 2.5s;
+    }
+
+    &-body.is-animate {
+        opacity: 1;
+
+        .engineering__snake-text-1 {
+            animation: snakeText1 1s forwards linear;
+        }
+
+        .engineering__snake-text-2 {
+            animation: snakeText2 1s forwards linear;
+        }
+
+        .engineering__snake-text-3 {
+            animation: snakeText2 1s forwards linear;
+        }
+
+        .engineering__snake-text-4 {
+            animation: snakeText2 1s forwards linear;
+        }
+
+        .engineering__snake-text-5 {
+            animation: snakeText2 1s forwards linear;
+        }
+
+        .engineering__snake-text-6 {
+            animation: snakeText1 1s forwards linear;
+        }
+    }
+}
+
+@keyframes snakeText1 {
+    0% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-2px);
+        opacity: 1;
+    }
+}
+
+@keyframes snakeText2 {
+    0% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(5px);
+        opacity: 1;
+    }
+}
+
+// ! анимация змеии
+.engineering__snake-1 {
+    // opacity: 0;
+    // transform: translateY(30px) scale(0.5);
+
+    transition:
+        opacity 600ms linear,
+        transform 100ms linear;
+}
+
+.snake-eye-1 {
+    transition: d 600ms linear;
+}
+
+// ! язык змея
+.snake-language {
+    animation-delay: 5s;
+    transition: transform 500ms linear;
+    transform: scale(0.8) translateX(50px);
+    // fill: transparent;
+    // &.is-animate{
+    //     animation-delay: 5s;
+    //     animation: snakeLanguageMove 2s linear infinite;
+    //     animation-delay: 5s;
+    // }
+}
+
+.engineering__snake-1.is-animate-language .snake-language {
+    transform: scale(1) translateX(0px);
+}
+
+@keyframes snakeLanguageMove {
+
+    0%,
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(36px, -16px);
+    }
+}
+
+.engineering__star {
+
+
+    &-1,
+    &-10,
+    &-14,
+    &-19,
+    &-17 {
+        animation: starsAnimation 2s linear infinite;
+    }
+
+
+    &-2,
+    &-10,
+    &-12,
+    &-16,
+    &-16 {
+        animation: starsAnimation 4s linear infinite;
+    }
+
+    &-3,
+    &-6,
+    &-11,
+    &-15 {
+        animation-delay: 0.1s;
+        animation: starsAnimation 2.5s linear infinite;
+    }
+
+    &-4,
+    &-14,
+    &-18,
+    &-8 {
+        animation-delay: 0.3s;
+        animation: starsAnimation 1.5s linear infinite;
+    }
+
+    &-5,
+    &-7,
+    &-9,
+    &-13 {
+        animation-delay: 0.5s;
+        animation: starsAnimation 5s linear infinite;
+    }
+}
+
+// ! анимация звезд
+@keyframes starsAnimation {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.2);
+    }
+}
+
+// ! анимация у цветоков в нижне части экрана
+
+// ? цветки у ног одина
+.petal {
+    transform-origin: bottom center;
+
+    &-1 {
+        transform-origin: center center;
+        animation: petalAnimate1 3s linear infinite;
+    }
+
+    &-2 {
+        transform-origin: center center;
+        animation: petalAnimate1 3s linear infinite;
+    }
+
+    &-3 {
+        transform-origin: center center;
+        animation: petalAnimate1 2s linear infinite;
+    }
+}
+
+@keyframes petalAnimate1 {
+
+    0%,
+    100% {
+        transform: rotate(0.0deg);
+    }
+
+    50% {
+        transform: rotate(0.7deg);
+    }
+}
+
+.engineering__herb_skew {
+    transition: transform 500ms linear;
+}
+
+.engineering__herb_skew {
+    transition: transform 300ms linear;
+}
+
+@keyframes herbSkew {
+
+    0%,
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+
+    50% {
+        transform: skew(10deg, 5deg);
+    }
+
+    75% {
+        transform: skew(-10deg, 5deg);
+    }
+}
+
+.engineering__herb-petal {
+    path {
+        transition: transform 300ms linear;
+    }
+}
+
+.engineering__herb-petal {
+    &-1 {
+        transform-origin: bottom right;
+        transition: transform 500ms linear;
+        transform: rotate(0deg) translateX(0px);
+    }
+
+    &-2 {
+        transform-origin: bottom right;
+        transition: transform 500ms linear;
+        transform: rotate(0deg) translateX(0px);
+    }
+
+    &-3 {
+        transform-origin: bottom right;
+        transition: transform 500ms linear;
+        transform: rotate(0deg) translateX(0px);
+    }
+
+
+    &-4 {
+        transform-origin: bottom left;
+        transition: transform 500ms linear;
+    }
+
+    &-5 {
+        transform-origin: bottom left;
+        transition: transform 500ms linear;
+    }
+
+    &-6 {
+        transform-origin: bottom left;
+        transition: transform 500ms linear;
+    }
+}
+
+// ** анимация появления змея
+.engineering__snake {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 200%;
+        height: calc(39% + 30px);
+
+        position: absolute;
+        bottom: -60px;
+        left: -70px;
+
+        background-color: #000;
+        z-index: 1;
+    }
+}
+
+.engineering__snake-1 {
+    opacity: 1;
+    z-index: -1;
+
+    svg {
+        // transition: transform 600ms linear;
+        transform: rotate(90deg) translateY(28px) translateX(170px);
+    }
+
+    &.is-animate {
+        svg {
+            animation: snake1 3.5s linear forwards;
+        }
+    }
+}
+
+.engineering__snake-2 {
+    position: relative;
+    z-index: 2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 35px;
+        width: 40px;
+        height: 10px;
+        background-color: transparent;
+    }
+}
+
+.engineering__snake-text-body {
+    z-index: 3;
+}
+
+.engineering__box:has(.engineering__body-woomen) {
+    z-index: 1;
+}
+
+@keyframes snake1 {
+    0% {
+        // transform: rotate(0deg) translateY(0px) translateX(0px);
+        transform: rotate(90deg) translateY(28px) translateX(170px);
+    }
+
+    25% {
+        transform: rotate(90deg) translateY(42px) translateX(130px);
+    }
+
+    40% {
+        transform: rotate(80deg) translateY(79px) translateX(100px);
+    }
+
+    50% {
+        transform: rotate(67deg) translateY(118px) translateX(60px);
+    }
+
+    60% {
+        transform: rotate(50deg) translateY(155px) translateX(30px);
+    }
+
+    70% {
+        transform: rotate(33deg) translateY(124px) translateX(-5px);
+    }
+
+    80% {
+        transform: rotate(19deg) translateY(112px) translateX(0px);
+    }
+
+    90% {
+        transform: rotate(10deg) translateY(85px) translateX(0px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0px) translateX(0px);
+    }
+}
+
+
+
+
+// ? анимация при наведении
+@media (hover:hover) {
+    .engineering__button.is-animate-letter:hover {
+        color: #838383;
+        text-fill-color: #838383;
+        -webkit-text-fill-color: #838383;
+    }
+
+    .engineering__button.is-animate-letter:hover .engineering__button-letter {
+        &-1 {
+            animation: letterAnimate1 .5s infinite;
+        }
+
+        &-2 {
+            animation: letterAnimate2 .5s infinite;
+        }
+
+        &-3 {
+            animation: letterAnimate3 .5s infinite;
+        }
+
+        &-4 {
+            animation: letterAnimate4 .5s infinite;
+        }
+    }
+
+    .engineering__herb_skew:hover {
+        animation: herbSkew 1s ease infinite;
+    }
+
+
+    .engineering__herb-petal:hover {
+
+        .engineering__herb-petal {
+            &-1 {
+                transform: rotate(-3deg);
+            }
+
+            &-2 {
+                transform: rotate(-5deg) translateX(2px);
+            }
+
+            &-3 {
+                transform: rotate(-4deg) translateX(1px);
+            }
+
+            &-4 {
+                transform: rotate(5deg);
+            }
+
+            &-5 {
+                transform: rotate(6deg) translateX(-4px);
+            }
+
+            &-6 {
+                transform: rotate(6deg);
+            }
+        }
+    }
+}
+
+
+// ** ===================================================
+// ** =================================================
+// ** ==============================================
+
+.engineering-projectable {
+    margin-bottom: 207px;
+    // .engineering-projectable__num
+    &__container {
+        max-width: calc(100vw - 308px);
+        width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    &__num {
+        margin-bottom: 53px;
+    }
+
+    // .engineering-projectable__top
+
+    &__top {
+        position: relative;
+        margin-bottom: 83px;
+    }
+
+    // .engineering-projectable__title
+
+    &__title {
+        position: relative;
+        left: 7px;
+    }
+
+    // .engineering-projectable__title-letter-11
+
+    &__title-letter-11 {}
+
+    // .engineering-projectable__title-letter-10
+
+    &__title-letter-10 {}
+
+    // .engineering-projectable__title-letter-9
+
+    &__title-letter-9 {}
+
+    // .engineering-projectable__title-letter-8
+
+    &__title-letter-8 {}
+
+    // .engineering-projectable__title-letter-7
+
+    &__title-letter-7 {}
+
+    // .engineering-projectable__title-letter-6
+
+    &__title-letter-6 {}
+
+    // .engineering-projectable__title-letter-5
+
+    &__title-letter-5 {}
+
+    // .engineering-projectable__title-letter-4
+
+    &__title-letter-4 {}
+
+    // .engineering-projectable__title-letter-3
+
+    &__title-letter-3 {}
+
+    // .engineering-projectable__title-letter-2
+
+    &__title-letter-2 {}
+
+    // .engineering-projectable__title-letter-1
+
+    &__title-letter-1 {}
+
+    // .engineering-projectable__shtrih
+
+    &__shtrih {
+        position: absolute;
+        top: -31px;
+        left: 2px;
+    }
+
+    // .engineering-projectable__inner
+
+    &__inner {
+        position: relative;
+    }
+
+    // .engineering-projectable__info
+
+    &__info {}
+
+    // .engineering-projectable__list
+
+    &__list {
+        margin-bottom: 36px;
+
+        .engineering-projectable__item:not(:last-child) {
+            margin-bottom: 46px;
+        }
+    }
+
+    // .engineering-projectable__item
+
+    &__item {}
+
+    // .engineering-projectable__description
+    &__description {
+        max-width: max-content;
+        width: 100%;
+
+        font-family: var(--ff-Roboto);
+        font-size: 24px;
+        color: #fcfcfc;
+        line-height: 130%;
+        text-transform: uppercase;
+        letter-spacing: 0.017em;
+
+        padding-bottom: 40px;
+        padding-right: 80px;
+
+        opacity: 0;
+        transform: translateY(-30px);
+
+        transition:
+            transform 600ms linear,
+            opacity 300ms linear;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            height: 1px;
+            width: 0%;
+
+            transition: width 600ms linear;
+
+            background-color: #fff;
+        }
+
+        &.is-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &.is-animate-border {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    // .engineering-projectable__kraken
+
+    &__kraken {
+        position: absolute;
+        right: 21px;
+        top: -119px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 58px auto 0;
+
+        position: relative;
+        left: 21px;
+    }
+
+    &__button-text {
+        max-width: max-content;
+        width: 100%;
+
+        font-family: var(--ff-Rurik);
+        font-size: 24px;
+        line-height: 100%;
+        color: #fff;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        opacity: 0;
+
+        transition:
+            opacity 300ms linear,
+            transform 600ms linear
+        ;
+    }
+}
+
+// цифра 01 в блоке
+.engineering-projectable__num .page-number-1-1 {
+    stroke-dashoffset: 90.97242736816406px;
+    stroke-dasharray: 90.97242736816406px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s;
+}
+
+.engineering-projectable__num.is-animate .page-number-1-1 {
+    stroke-dashoffset: 0;
+    fill: rgb(252, 252, 252);
+}
+
+.engineering-projectable__num .page-number-1-2 {
+    stroke-dashoffset: 46.48621368408203px;
+    stroke-dasharray: 46.48621368408203px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.09s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.09s;
+}
+
+.engineering-projectable__num.is-animate .page-number-1-2 {
+    stroke-dashoffset: 0;
+}
+
+.engineering-projectable__num .page-number-1-3 {
+    stroke-dashoffset: 145.6720428466797px;
+    stroke-dasharray: 145.6720428466797px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.6000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.6000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+}
+
+.engineering-projectable__num.is-animate .page-number-1-3 {
+    stroke-dashoffset: 0;
+}
+
+.engineering-projectable__num .page-number-1-4 {
+    stroke-dashoffset: 149.26034545898438px;
+    stroke-dasharray: 149.26034545898438px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.7000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.11s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.7000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.11s;
+}
+
+.engineering-projectable__num.is-animate .page-number-1-4 {
+    stroke-dashoffset: 0;
+}
+
+.engineering-projectable__num .page-number-1-5 {
+    stroke-dashoffset: 66.73387145996094px;
+    stroke-dasharray: 66.73387145996094px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+}
+
+.engineering-projectable__num.is-animate .page-number-1-5 {
+    stroke-dashoffset: 0;
+}
+
+// анимацияс слова проектирования
+.engineering-projectable__title-letter {
+    transition:
+        transform 1000ms linear,
+        opacity 600ms linear;
+    opacity: 0;
+
+    &-1 {
+        transform: translateY(5px);
+        animation-delay: 0.2s;
+    }
+
+    &-2 {
+        transform: translateY(10px);
+        animation-delay: 0.35s;
+    }
+
+    &-3 {
+        transform: translateY(15px);
+        animation-delay: 0.45s;
+    }
+
+    &-4 {
+        transform: translateY(20px);
+        animation-delay: 0.5s;
+    }
+
+    &-5 {
+        transform: translateY(25px);
+        animation-delay: 0.55s;
+    }
+
+    &-6 {
+        transform: translateY(30px);
+        animation-delay: 0.65s;
+    }
+
+    &-7 {
+        transform: translateY(35px);
+        animation-delay: 0.7s;
+    }
+
+    &-8 {
+        transform: translateY(40px);
+        animation-delay: 0.75s;
+    }
+
+    &-9 {
+        transform: translateY(45px);
+        animation-delay: 0.8s;
+    }
+
+    &-10 {
+        transform: translateY(50px);
+        animation-delay: 0.85s;
+    }
+
+    &-11 {
+        transform: translateY(55px);
+        animation-delay: 0.9s;
+    }
+}
+
+.engineering-projectable__title.is-animate {
+    .engineering-projectable__title-letter {
+
+        &-1,
+        &-2,
+        &-3,
+        &-4,
+        &-5,
+        &-6,
+        &-7,
+        &-8,
+        &-9,
+        &-10,
+        &-11 {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
+
+// обводка около текста "проектирование"
+// ========================
+.engineering-projectable__shtrih .page-border-1-1 {
+    stroke-dashoffset: 2000px;
+    stroke-dasharray: 2000px;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-1 {
+    stroke-dashoffset: 0;
+}
+
+.engineering-projectable__shtrih .page-border-1-2 {
+    stroke-dashoffset: 1990px;
+    stroke-dasharray: 1990px;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.09s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.09s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-2 {
+    stroke-dashoffset: 0;
+}
+
+.engineering-projectable__shtrih .page-border-1-3 {
+    stroke-dashoffset: 53.53245162963867px;
+    stroke-dasharray: 53.53245162963867px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.6000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.6000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-3 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-4 {
+    stroke-dashoffset: 266.6424560546875px;
+    stroke-dasharray: 266.6424560546875px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.7000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.11s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.7000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.11s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-4 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-5 {
+    stroke-dashoffset: 57.08375549316406px;
+    stroke-dasharray: 57.08375549316406px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-5 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-6 {
+    stroke-dashoffset: 147.98098754882812px;
+    stroke-dasharray: 147.98098754882812px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.13s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.13s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-6 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-7 {
+    stroke-dashoffset: 278px;
+    stroke-dasharray: 278px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.14s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.14s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-7 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-8 {
+    stroke-dashoffset: 64.5212287902832px;
+    stroke-dasharray: 64.5212287902832px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.15000000000000002s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.15000000000000002s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-8 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-9 {
+    stroke-dashoffset: 149.98098754882812px;
+    stroke-dasharray: 149.98098754882812px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.2000000000000002s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.2000000000000002s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-9 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-10 {
+    stroke-dashoffset: 284px;
+    stroke-dasharray: 284px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16999999999999998s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16999999999999998s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-10 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-11 {
+    stroke-dashoffset: 284px;
+    stroke-dasharray: 284px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.18s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.18s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-11 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-12 {
+    stroke-dashoffset: 42.59269714355469px;
+    stroke-dasharray: 42.59269714355469px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.19s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.19s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-12 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-13 {
+    stroke-dashoffset: 77.98033905029297px;
+    stroke-dasharray: 77.98033905029297px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-13 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-14 {
+    stroke-dashoffset: 130px;
+    stroke-dasharray: 130px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.7000000000000002s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.21000000000000002s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.7000000000000002s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.21000000000000002s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-14 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-15 {
+    stroke-dashoffset: 310px;
+    stroke-dasharray: 310px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.8000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22000000000000003s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.8000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22000000000000003s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-15 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-16 {
+    stroke-dashoffset: 44.1667366027832px;
+    stroke-dasharray: 44.1667366027832px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22999999999999998s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22999999999999998s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-16 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-17 {
+    stroke-dashoffset: 149.9803466796875px;
+    stroke-dasharray: 149.9803466796875px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-17 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-18 {
+    stroke-dashoffset: 276px;
+    stroke-dasharray: 276px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.25s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.25s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-18 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-19 {
+    stroke-dashoffset: 276px;
+    stroke-dasharray: 276px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.26s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.26s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-19 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-20 {
+    stroke-dashoffset: 52.70295715332031px;
+    stroke-dasharray: 52.70295715332031px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.3000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.27s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.3000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.27s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-20 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-21 {
+    stroke-dashoffset: 75.98033905029297px;
+    stroke-dasharray: 75.98033905029297px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-21 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-22 {
+    stroke-dashoffset: 276px;
+    stroke-dasharray: 276px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.29s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.29s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-22 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-23 {
+    stroke-dashoffset: 130px;
+    stroke-dasharray: 130px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-23 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-24 {
+    stroke-dashoffset: 28.3416690826416px;
+    stroke-dasharray: 28.3416690826416px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.7s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.31s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.7s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.31s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-24 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-25 {
+    stroke-dashoffset: 151.98098754882812px;
+    stroke-dasharray: 151.98098754882812px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.8000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.32s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.8000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.32s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-25 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-26 {
+    stroke-dashoffset: 42px;
+    stroke-dasharray: 42px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.33s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.33s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-26 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-27 {
+    stroke-dashoffset: 42px;
+    stroke-dasharray: 42px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.34s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.34s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-27 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-28 {
+    stroke-dashoffset: 37.57216262817383px;
+    stroke-dasharray: 37.57216262817383px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.35000000000000003s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.35000000000000003s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-28 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-29 {
+    stroke-dashoffset: 115.9809799194336px;
+    stroke-dasharray: 115.9809799194336px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36000000000000004s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36000000000000004s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-29 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-30 {
+    stroke-dashoffset: 40px;
+    stroke-dasharray: 40px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.3000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.37s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.3000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.37s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-30 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-31 {
+    stroke-dashoffset: 40px;
+    stroke-dasharray: 40px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.38s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.38s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-31 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-32 {
+    stroke-dashoffset: 57.009952545166016px;
+    stroke-dasharray: 57.009952545166016px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.39s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.39s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-32 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-33 {
+    stroke-dashoffset: 261.9802551269531px;
+    stroke-dasharray: 261.9802551269531px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-33 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-34 {
+    stroke-dashoffset: 51.95146179199219px;
+    stroke-dasharray: 51.95146179199219px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.7s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.41000000000000003s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.7s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.41000000000000003s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-34 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-35 {
+    stroke-dashoffset: 155.9803466796875px;
+    stroke-dasharray: 155.9803466796875px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.8000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42000000000000004s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.8000000000000003s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42000000000000004s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-35 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-36 {
+    stroke-dashoffset: 276px;
+    stroke-dasharray: 276px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.43000000000000005s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 3.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.43000000000000005s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-36 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-37 {
+    stroke-dashoffset: 276px;
+    stroke-dasharray: 276px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.44s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.44s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-37 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-38 {
+    stroke-dashoffset: 57.09247589111328px;
+    stroke-dasharray: 57.09247589111328px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4.1000000000000005s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.45s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4.1000000000000005s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.45s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-38 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-39 {
+    stroke-dashoffset: 157.9803466796875px;
+    stroke-dasharray: 157.9803466796875px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.46s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.46s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-39 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-40 {
+    stroke-dashoffset: 276px;
+    stroke-dasharray: 276px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4.300000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.47000000000000003s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4.300000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.47000000000000003s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-40 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__shtrih .page-border-1-41 {
+    stroke-dashoffset: 276px;
+    stroke-dasharray: 276px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48000000000000004s;
+    transition: stroke-dashoffset 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) 4.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48000000000000004s;
+}
+
+.engineering-projectable__shtrih.is-animate .page-border-1-41 {
+    stroke-dashoffset: 0;
+    fill: rgb(95, 95, 95);
+}
+
+.engineering-projectable__kraken {
+    transform: translateX(200px);
+    opacity: 0;
+
+    transition:
+        transform 600ms linear,
+        opacity 500ms linear;
+}
+
+.engineering-projectable__kraken.is-animate {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.engineering-projectable__kraken.is-animate-move {
+    opacity: 1;
+
+    animation: moveKraken 5s linear infinite;
+}
+
+@keyframes moveKraken {
+
+    0%,
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(20px) translateX(5px);
+    }
+
+    50% {
+        transform: translateY(-20px) translateX(-5px);
+    }
+}
+
+.engineering-projectable__item {
+    transform: translateY(20px);
+    opacity: 0;
+
+    transition-delay: var(--animation-delay);
+
+    transition:
+        transform 600ms linear,
+        opacity 300ms linear;
+}
+
+.engineering-projectable__info.is-animate {
+    .engineering-projectable__item {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.engineering-projectable__info.is-animate-line {
+    .engineering-projectable__item::before {
+        width: 100%;
+    }
+}
+
+.engineering-projectable {
+    position: relative;
+
+    &__flower {
+        position: absolute;
+        &::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            
+            position: absolute;
+            top: 0;
+
+            background-color: #000;
+            
+            transition: 
+                height 1000ms linear,
+            ;
+            z-index: 2;
+        }
+        &-1 {
+            left: 34.8vw;
+            top: 7px;
+        }
+        &-2 {
+            top: 39px;
+            right: 34px;
+        }
+        &-3 {
+            top: 264px;
+            right: 72px;
+        }
+        &-4 {
+            top: 150px;
+            left: 93px;
+        }
+        &-5 {
+            top: 45%;
+            left: 109px;
+        }
+        &-6 {
+            left: 11.5%;
+            bottom: 128px;
+        }
+        &-7 {
+            left: 28%;
+            bottom: 74px;
+        }
+        &-8 {
+            bottom: 38px;
+            right: 24.3%;
+        }
+        &-9 {
+            right: 124px;
+            bottom: 168px;
+        }
+
+        &.is-animate {
+            &::before{
+                height: 0;
+            }
+        }
+    }
+
+    &__flower-bud{
+        position: absolute;
+        transition: transform 600ms linear;
+
+        &.is-animate{
+            animation: flowerBudRotate 8s linear infinite;
+            animation-delay: 1s;
+        }
+    }
+}
+@keyframes flowerBudRotate {
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    25%, 75%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+// анимация циркуля
+/***************************************************
+ * Generated by SVG Artista on 7/21/2025, 6:10:16 PM
+ * MIT license (https://opensource.org/licenses/MIT)
+ * W. https://svgartista.net
+ **************************************************/
+
+.compass__button .compass-1 {
+    stroke-dashoffset: 591.5071411132812px;
+    stroke-dasharray: 591.5071411132812px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}
+
+.compass__button.is-animate .compass-1 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-2 {
+    stroke-dashoffset: 13.4439058303833px;
+    stroke-dasharray: 13.4439058303833px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.02s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.02s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+}
+
+.compass__button.is-animate .compass-2 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-3 {
+    stroke-dashoffset: 9.509859085083008px;
+    stroke-dasharray: 9.509859085083008px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+}
+
+.compass__button.is-animate .compass-3 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-4 {
+    stroke-dashoffset: 12.656283378601074px;
+    stroke-dasharray: 12.656283378601074px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.06s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.06s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+}
+
+.compass__button.is-animate .compass-4 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-5 {
+    stroke-dashoffset: 9.509572982788086px;
+    stroke-dasharray: 9.509572982788086px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+}
+
+.compass__button.is-animate .compass-5 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-6 {
+    stroke-dashoffset: 13.443921089172363px;
+    stroke-dasharray: 13.443921089172363px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+}
+
+.compass__button.is-animate .compass-6 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-7 {
+    stroke-dashoffset: 9.50964641571045px;
+    stroke-dasharray: 9.50964641571045px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+}
+
+.compass__button.is-animate .compass-7 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-8 {
+    stroke-dashoffset: 13.443849563598633px;
+    stroke-dasharray: 13.443849563598633px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.14s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.14s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+}
+
+.compass__button.is-animate .compass-8 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-9 {
+    stroke-dashoffset: 9.510381698608398px;
+    stroke-dasharray: 9.510381698608398px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+}
+
+.compass__button.is-animate .compass-9 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-10 {
+    stroke-dashoffset: 11.854130744934082px;
+    stroke-dasharray: 11.854130744934082px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.18s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.18s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+}
+
+.compass__button.is-animate .compass-10 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-11 {
+    stroke-dashoffset: 8.689290046691895px;
+    stroke-dasharray: 8.689290046691895px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+}
+
+.compass__button.is-animate .compass-11 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-12 {
+    stroke-dashoffset: 12.494028091430664px;
+    stroke-dasharray: 12.494028091430664px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+}
+
+.compass__button.is-animate .compass-12 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-13 {
+    stroke-dashoffset: 9.50964069366455px;
+    stroke-dasharray: 9.50964069366455px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+}
+
+.compass__button.is-animate .compass-13 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-14 {
+    stroke-dashoffset: 13.444563865661621px;
+    stroke-dasharray: 13.444563865661621px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.26s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.26s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+}
+
+.compass__button.is-animate .compass-14 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-15 {
+    stroke-dashoffset: 9.50965166091919px;
+    stroke-dasharray: 9.50965166091919px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
+}
+
+.compass__button.is-animate .compass-15 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-16 {
+    stroke-dashoffset: 13.443849563598633px;
+    stroke-dasharray: 13.443849563598633px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s;
+}
+
+.compass__button.is-animate .compass-16 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-17 {
+    stroke-dashoffset: 9.510381698608398px;
+    stroke-dasharray: 9.510381698608398px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.32s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4000000000000004s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.32s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4000000000000004s;
+}
+
+.compass__button.is-animate .compass-17 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-18 {
+    stroke-dashoffset: 13.443846702575684px;
+    stroke-dasharray: 13.443846702575684px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.34s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.34s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s;
+}
+
+.compass__button.is-animate .compass-18 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-19 {
+    stroke-dashoffset: 9.509649276733398px;
+    stroke-dasharray: 9.509649276733398px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6s;
+}
+
+.compass__button.is-animate .compass-19 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-20 {
+    stroke-dashoffset: 13.443849563598633px;
+    stroke-dasharray: 13.443849563598633px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.38s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.7s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.38s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.7s;
+}
+
+.compass__button.is-animate .compass-20 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-21 {
+    stroke-dashoffset: 9.50965166091919px;
+    stroke-dasharray: 9.50965166091919px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s;
+}
+
+.compass__button.is-animate .compass-21 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-22 {
+    stroke-dashoffset: 13.443849563598633px;
+    stroke-dasharray: 13.443849563598633px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.9000000000000004s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.9000000000000004s;
+}
+
+.compass__button.is-animate .compass-22 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-23 {
+    stroke-dashoffset: 9.50964069366455px;
+    stroke-dasharray: 9.50964069366455px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.44s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.44s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3s;
+}
+
+.compass__button.is-animate .compass-23 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-24 {
+    stroke-dashoffset: 13.443849563598633px;
+    stroke-dasharray: 13.443849563598633px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.46s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.1000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.46s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.1000000000000005s;
+}
+
+.compass__button.is-animate .compass-24 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-25 {
+    stroke-dashoffset: 9.50964069366455px;
+    stroke-dasharray: 9.50964069366455px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s;
+}
+
+.compass__button.is-animate .compass-25 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-26 {
+    stroke-dashoffset: 13.279343605041504px;
+    stroke-dasharray: 13.279343605041504px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.3s;
+}
+
+.compass__button.is-animate .compass-26 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-27 {
+    stroke-dashoffset: 9.50965166091919px;
+    stroke-dasharray: 9.50965166091919px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.52s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.4000000000000004s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.52s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.4000000000000004s;
+}
+
+.compass__button.is-animate .compass-27 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-28 {
+    stroke-dashoffset: 13.279337882995605px;
+    stroke-dasharray: 13.279337882995605px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.54s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.54s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5s;
+}
+
+.compass__button.is-animate .compass-28 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-29 {
+    stroke-dashoffset: 9.50965166091919px;
+    stroke-dasharray: 9.50965166091919px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.56s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.6000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.56s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.6000000000000005s;
+}
+
+.compass__button.is-animate .compass-29 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-30 {
+    stroke-dashoffset: 13.27955436706543px;
+    stroke-dasharray: 13.27955436706543px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.58s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.58s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7s;
+}
+
+.compass__button.is-animate .compass-30 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-31 {
+    stroke-dashoffset: 9.510381698608398px;
+    stroke-dasharray: 9.510381698608398px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.8s;
+}
+
+.compass__button.is-animate .compass-31 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-32 {
+    stroke-dashoffset: 13.444510459899902px;
+    stroke-dasharray: 13.444510459899902px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.62s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.9000000000000004s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.62s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.9000000000000004s;
+}
+
+.compass__button.is-animate .compass-32 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-33 {
+    stroke-dashoffset: 9.510713577270508px;
+    stroke-dasharray: 9.510713577270508px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.64s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.64s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4s;
+}
+
+.compass__button.is-animate .compass-33 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-34 {
+    stroke-dashoffset: 13.444504737854004px;
+    stroke-dasharray: 13.444504737854004px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.66s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.1000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.66s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.1000000000000005s;
+}
+
+.compass__button.is-animate .compass-34 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-35 {
+    stroke-dashoffset: 9.510719299316406px;
+    stroke-dasharray: 9.510719299316406px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.68s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.68s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s;
+}
+
+.compass__button.is-animate .compass-35 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-36 {
+    stroke-dashoffset: 13.444504737854004px;
+    stroke-dasharray: 13.444504737854004px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.3s;
+}
+
+.compass__button.is-animate .compass-36 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-37 {
+    stroke-dashoffset: 9.509308338165283px;
+    stroke-dasharray: 9.509308338165283px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4s;
+}
+
+.compass__button.is-animate .compass-37 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-38 {
+    stroke-dashoffset: 13.443744659423828px;
+    stroke-dasharray: 13.443744659423828px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.74s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.74s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.5s;
+}
+
+.compass__button.is-animate .compass-38 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-39 {
+    stroke-dashoffset: 9.509308338165283px;
+    stroke-dasharray: 9.509308338165283px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.76s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.6000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.76s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.6000000000000005s;
+}
+
+.compass__button.is-animate .compass-39 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-40 {
+    stroke-dashoffset: 13.443085670471191px;
+    stroke-dasharray: 13.443085670471191px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.78s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.7s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.78s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.7s;
+}
+
+.compass__button.is-animate .compass-40 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-41 {
+    stroke-dashoffset: 9.509962558746338px;
+    stroke-dasharray: 9.509962558746338px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.8s;
+}
+
+.compass__button.is-animate .compass-41 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-42 {
+    stroke-dashoffset: 13.443097114562988px;
+    stroke-dasharray: 13.443097114562988px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8200000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.9s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8200000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.9s;
+}
+
+.compass__button.is-animate .compass-42 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-43 {
+    stroke-dashoffset: 9.510719299316406px;
+    stroke-dasharray: 9.510719299316406px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5s;
+}
+
+.compass__button.is-animate .compass-43 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-44 {
+    stroke-dashoffset: 13.444504737854004px;
+    stroke-dasharray: 13.444504737854004px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.86s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.1s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.86s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.1s;
+}
+
+.compass__button.is-animate .compass-44 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-45 {
+    stroke-dashoffset: 9.509974002838135px;
+    stroke-dasharray: 9.509974002838135px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.88s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.2s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.88s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.2s;
+}
+
+.compass__button.is-animate .compass-45 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-46 {
+    stroke-dashoffset: 13.443744659423828px;
+    stroke-dasharray: 13.443744659423828px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.3s;
+}
+
+.compass__button.is-animate .compass-46 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-47 {
+    stroke-dashoffset: 9.509962558746338px;
+    stroke-dasharray: 9.509962558746338px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.92s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.4s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.92s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.4s;
+}
+
+.compass__button.is-animate .compass-47 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-48 {
+    stroke-dashoffset: 13.443739891052246px;
+    stroke-dasharray: 13.443739891052246px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9400000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9400000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.5s;
+}
+
+.compass__button.is-animate .compass-48 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-49 {
+    stroke-dashoffset: 9.51004934310913px;
+    stroke-dasharray: 9.51004934310913px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.6000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.6000000000000005s;
+}
+
+.compass__button.is-animate .compass-49 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-50 {
+    stroke-dashoffset: 13.444504737854004px;
+    stroke-dasharray: 13.444504737854004px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.98s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.7s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.98s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.7s;
+}
+
+.compass__button.is-animate .compass-50 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-51 {
+    stroke-dashoffset: 13.443744659423828px;
+    stroke-dasharray: 13.443744659423828px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.8s;
+}
+
+.compass__button.is-animate .compass-51 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-52 {
+    stroke-dashoffset: 9.50996732711792px;
+    stroke-dasharray: 9.50996732711792px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.02s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.9s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.02s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.9s;
+}
+
+.compass__button.is-animate .compass-52 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-53 {
+    stroke-dashoffset: 13.443733215332031px;
+    stroke-dasharray: 13.443733215332031px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6s;
+}
+
+.compass__button.is-animate .compass-53 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-54 {
+    stroke-dashoffset: 9.510724544525146px;
+    stroke-dasharray: 9.510724544525146px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.06s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.1000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.06s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.1000000000000005s;
+}
+
+.compass__button.is-animate .compass-54 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-55 {
+    stroke-dashoffset: 13.444117546081543px;
+    stroke-dasharray: 13.444117546081543px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.2s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.2s;
+}
+
+.compass__button.is-animate .compass-55 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-56 {
+    stroke-dashoffset: 9.50963544845581px;
+    stroke-dasharray: 9.50963544845581px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.3s;
+}
+
+.compass__button.is-animate .compass-56 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-57 {
+    stroke-dashoffset: 13.443675994873047px;
+    stroke-dasharray: 13.443675994873047px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4s;
+}
+
+.compass__button.is-animate .compass-57 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-58 {
+    stroke-dashoffset: 9.510315895080566px;
+    stroke-dasharray: 9.510315895080566px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1400000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1400000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.5s;
+}
+
+.compass__button.is-animate .compass-58 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-59 {
+    stroke-dashoffset: 19.812227249145508px;
+    stroke-dasharray: 19.812227249145508px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.16s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.16s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6000000000000005s;
+}
+
+.compass__button.is-animate .compass-59 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-60 {
+    stroke-dashoffset: 24.94413948059082px;
+    stroke-dasharray: 24.94413948059082px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.18s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.7s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.18s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.7s;
+}
+
+.compass__button.is-animate .compass-60 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-61 {
+    stroke-dashoffset: 40.417388916015625px;
+    stroke-dasharray: 40.417388916015625px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.8s;
+}
+
+.compass__button.is-animate .compass-61 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-62 {
+    stroke-dashoffset: 87.17413330078125px;
+    stroke-dasharray: 87.17413330078125px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.22s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.9s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.22s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.9s;
+}
+
+.compass__button.is-animate .compass-62 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-63 {
+    stroke-dashoffset: 56.98579025268555px;
+    stroke-dasharray: 56.98579025268555px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.24s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.24s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7s;
+}
+
+.compass__button.is-animate .compass-63 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-64 {
+    stroke-dashoffset: 53.34365463256836px;
+    stroke-dasharray: 53.34365463256836px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.26s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.1000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.26s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.1000000000000005s;
+}
+
+.compass__button.is-animate .compass-64 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-65 {
+    stroke-dashoffset: 10.534589767456055px;
+    stroke-dasharray: 10.534589767456055px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.28s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.2s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.28s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.2s;
+}
+
+.compass__button.is-animate .compass-65 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-66 {
+    stroke-dashoffset: 12.995832443237305px;
+    stroke-dasharray: 12.995832443237305px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.3s;
+}
+
+.compass__button.is-animate .compass-66 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-67 {
+    stroke-dashoffset: 49.069156646728516px;
+    stroke-dasharray: 49.069156646728516px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.32s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.4s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.32s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.4s;
+}
+
+.compass__button.is-animate .compass-67 {
+    stroke-dashoffset: 0;
+    fill: rgb(0, 0, 0);
+}
+
+.compass__button .compass-68 {
+    stroke-dashoffset: 270.14117431640625px;
+    stroke-dasharray: 270.14117431640625px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.34s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.34s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.5s;
+}
+
+.compass__button.is-animate .compass-68 {
+    stroke-dashoffset: 0;
+    fill: rgb(0, 0, 0);
+}
+
+.compass__button .compass-69 {
+    stroke-dashoffset: 17.981948852539062px;
+    stroke-dasharray: 17.981948852539062px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.36s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.6000000000000005s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.36s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.6000000000000005s;
+}
+
+.compass__button.is-animate .compass-69 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-70 {
+    stroke-dashoffset: 14.10190486907959px;
+    stroke-dasharray: 14.10190486907959px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3800000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.7s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3800000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.7s;
+}
+
+.compass__button.is-animate .compass-70 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-71 {
+    stroke-dashoffset: 9.992571353912354px;
+    stroke-dasharray: 9.992571353912354px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.8s;
+}
+
+.compass__button.is-animate .compass-71 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-72 {
+    stroke-dashoffset: 6.61965799331665px;
+    stroke-dasharray: 6.61965799331665px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.42s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.9s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.42s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.9s;
+}
+
+.compass__button.is-animate .compass-72 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-73 {
+    stroke-dashoffset: 10.058663368225098px;
+    stroke-dasharray: 10.058663368225098px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8s;
+}
+
+.compass__button.is-animate .compass-73 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-74 {
+    stroke-dashoffset: 12.61001205444336px;
+    stroke-dasharray: 12.61001205444336px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.46s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.100000000000001s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.46s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.100000000000001s;
+}
+
+.compass__button.is-animate .compass-74 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-75 {
+    stroke-dashoffset: 48.520938873291016px;
+    stroke-dasharray: 48.520938873291016px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.48s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.200000000000001s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.48s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.200000000000001s;
+}
+
+.compass__button.is-animate .compass-75 {
+    stroke-dashoffset: 0;
+    fill: rgb(0, 0, 0);
+}
+
+.compass__button .compass-76 {
+    stroke-dashoffset: 270.100830078125px;
+    stroke-dasharray: 270.100830078125px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.3s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.3s;
+}
+
+.compass__button.is-animate .compass-76 {
+    stroke-dashoffset: 0;
+    fill: rgb(0, 0, 0);
+}
+
+.compass__button .compass-77 {
+    stroke-dashoffset: 18.677907943725586px;
+    stroke-dasharray: 18.677907943725586px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.52s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.4s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.52s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.4s;
+}
+
+.compass__button.is-animate .compass-77 {
+    stroke-dashoffset: 0;
+}
+
+.compass__button .compass-78 {
+    stroke-dashoffset: 15.17813777923584px;
+    stroke-dasharray: 15.17813777923584px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.54s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.5s;
+    transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.54s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 8.5s;
+}
+
+.compass__button.is-animate .compass-78 {
+    stroke-dashoffset: 0;
+}
+
+.engineering-projectable__flowers.is-animate {
+    .engineering-projectable__flower::before{
+        height: 0;
+    }
+}
+
+@keyframes animationHoveringLetter {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(var(--transform-key));
+    }
+    75%{
+        transform: translateY(calc(var(--transform-key) * -1));
+    }
+}
+.item-hovering-link{
+    max-width: max-content;
+    width: 100%;
+
+    font-family: var(--ff-Rurik);
+    font-size: 52px;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    padding-inline: 60px;
+
+    -webkit-text-stroke: 2px #838383;
+    /* Обводка для WebKit браузеров */
+    text-stroke: 2px #838383;
+    /* Обводка для других браузеров */
+    -webkit-text-fill-color: transparent;
+    /* Прозрачная заливка для WebKit */
+    text-fill-color: transparent;
+    /* Прозрачная заливка для других */
+    color: transparent;
+    /* На всякий случай, для полной уверенности */
+
+    position: relative;
+
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+
+        top: 46%;
+        transform: translateY(-50%);
+        left: 0;
+
+        background-color: #fff;
+
+        transition:
+            height 500ms linear,
+            width 1000ms linear;
+
+        z-index: -1;
+    }
+    a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.engineering-fulfill{
+    &__item{
+        position: relative;
+        
+        &:not(:last-child) {
+            margin-bottom: 46px;
+        }
+    }
+    &__list {
+        margin-bottom: 36px;
+    }
+    &__container{
+        max-width: 100%;
+        width: 100%;
+        padding-left: 5.5vw;
+    }
+    &__num{
+        margin-bottom: 25px;
+    }
+    &__top{
+        margin-bottom: 73px;
+    }
+    &__description {
+        max-width: 96%;
+        width: 100%;
+
+        font-family: var(--ff-Roboto);
+        font-size: 24px;
+        color: #fcfcfc;
+        line-height: 130%;
+        text-transform: uppercase;
+        letter-spacing: 0.017em;
+
+        padding-bottom: 40px;
+        padding-right: 80px;
+
+        opacity: 0;
+        transform: translateY(-30px);
+
+        transition:
+            transform 600ms linear,
+            opacity 300ms linear;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            height: 1px;
+            width: 0%;
+
+            transition: width 600ms linear;
+
+            background-color: #fff;
+        }
+
+        &.is-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &.is-animate-border {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+    &__inner{
+        position: relative;
+        display: flex;
+        gap: 13px;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // margin-top: 64px;
+
+        position: relative;
+        top: -44px;
+    }
+    &__hand{
+        max-width: max-content;
+
+        position: relative;
+        top: -85px;
+        left: 68px;
+    }
+    &__info{
+        max-width: 998px;
+        width: 100%;
+    }
+    &__face {
+        position: absolute;
+        right: 80px;
+        top: 77px;
+    }
+}
+
+// ========================
+@media (hover:hover) {
+    .item-hovering-link:hover {
+        &::before {
+            height: 140%;
+        }
+
+        color: #000;
+        font-family: var(--ff-Roboto);
+
+        .item-hovering-link__lettter{
+            animation: animationHoveringLetter 1s linear infinite;
+        }
+    }
+
+    .engineering-projectable__button:hover .engineering-projectable__button-text{
+        opacity: 1;
+    }
+}

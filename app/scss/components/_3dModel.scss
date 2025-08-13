@@ -1,0 +1,37 @@
+#ar-prompt {
+    display: none;
+    }
+    
+model-viewer{
+    width: 1000px !important;
+    height: 500px !important;
+    pointer-events: none !important;
+}
+
+
+.slot.interaction-prompt{
+    --interaction-prompt-display: none;
+
+    position: static !important;
+    display: none !important; 
+    opacity: 0 !important;
+}
+
+.slot.interaction-prompt > *{
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.animated-container{
+    display: none;
+}
+
+#prompt{
+    display: none !important;
+    opacity: 0 !important;
+}
+
+#default-ar-button,
+.fab{
+    display: none !important;
+}

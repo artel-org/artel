@@ -1,0 +1,230 @@
+.save-money {
+    padding-top: 133px;
+    padding-bottom: 259px;
+    background-position: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        content: url(../image/no-deleted/saveMoneyBgDecor.png);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        animation: animationBgPosition 12s linear infinite;
+    }
+    &.no-bg{
+        background: none !important;
+    }
+    &.pt-14{
+        padding-top: 14px;
+    }
+    &.pt-133{
+        padding-top: 133px;
+    }
+    &.pb-222{
+        padding-bottom: 222px;
+    }
+    &.pb-220{
+        padding-bottom: 220px;
+    }
+    // .save-money__inner
+
+    &__inner {
+        position: relative;
+    }
+
+    // .save-money__parent-form
+
+    &__parent-form {
+        max-width: 1075px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 68px 144px 77px 144px;
+
+        background: rgba(47, 47, 47, 0.04);
+        box-shadow: inset 3.86667px -3.86667px 3.86667px rgba(165, 165, 165, 0.1), inset -3.86667px 3.86667px 3.86667px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12.95px);
+        border-radius: 10px;
+
+        border: 1px solid rgba(242, 199, 145, 1);
+
+        position: relative;
+    }
+
+    // .save-money__top
+
+    &__top {
+        margin-bottom: 73px;
+    }
+
+    // .save-money__title
+
+    &__title {
+        font-size: 45.79px;
+        font-weight: 400;
+        line-height: 50.37px;
+        letter-spacing: 0em;
+    }
+
+    // .save-money__form
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 28px;
+    }
+
+    // .save-money__label
+
+    &__label {
+        max-width: 100%;
+        width: 100%;
+
+        border-bottom: 1px solid #ffff;
+        padding-bottom: 10px;
+
+        position: relative;
+
+        &.save-money__label_col-two{
+            grid-column: span 2;
+        }
+    }
+
+    // .save-money__input
+
+    &__input {
+        max-width: 100%;
+        width: 100%;
+        
+        background: none;
+        outline: none;
+        border: none;
+
+        font-family: var(--ff-Roboto);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        color: #FFFFFF;
+    }   
+    textarea.save-money__input{
+        resize: none;
+        height: 20px;
+    }
+    &__input-file{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+    // .save-money__file-decor
+
+    &__file-decor {
+        font-family: var(--ff-Roboto);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        color: #8C8B8B;
+    }
+
+    // .save-money__box
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 13px;
+
+        cursor: pointer;
+    }
+
+    // .save-money__checkbox-input
+
+    &__checkbox-input {
+        display: none;
+    }
+    &__checkbox-input:checked ~ &__decor::before{
+        opacity: 1;
+    }
+    // .save-money__decor
+
+    &__decor {
+        width: 18px;
+        height: 18px;
+        background-color: var(--color-gold-f2c791);
+        border-radius: 4px;
+
+        position: relative;
+        flex-shrink: 0;
+
+        &::before{
+            content: url(../image/no-deleted/decor/arrow-input-main-page.svg);
+            position: absolute;
+            left: 3px;
+            opacity: 0;
+
+            @include transtionOneStyle(opacity);
+        }
+
+        flex-shrink: 0;
+    }
+
+    // .save-money__info
+
+    &__info {
+        font-family: var(--ff-Roboto);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.06px;
+        color: #8C8B8B;
+    }
+
+    // .save-money__btn
+
+    &__btn {
+        max-width: 100%;
+        width: 100%;
+
+        font-family: var(--ff-Roboto);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18.75px;
+        color: var(--color-gray-5B5B5B);
+
+        padding: 20px;
+
+        &.save-money__btn_design-page{
+            background-color: #2A48AD;
+            color: white;
+        }
+    }
+}
+
+@keyframes animationBgPosition {
+    0%,100%{
+        left: 0%;
+        top: 0;
+    }
+    25%{
+        left: 70%;
+        top: 30%;
+    }
+
+    50%{
+        left: 50%;
+        top: 20%;
+    }
+    75%{
+        left: 10%;
+        top: 15%;
+    }
+}
+
+// width="56" height="45"

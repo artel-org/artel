@@ -1,0 +1,252 @@
+.muha {
+    --time: .1s;
+}
+.muha-path{
+    transform-origin: center
+}
+/* вехняя лапка слева */
+.muha-path-3{
+    animation: path3 var(--time) linear infinite forwards;
+}
+.muha-path-4 {
+    animation: path4 var(--time) linear infinite forwards;
+}
+.muha-path-5{
+    animation: path5 var(--time) linear infinite forwards;
+}
+.muha-path-6{
+    animation: path6 var(--time) linear infinite forwards;
+}
+.muha-path-2{
+    animation: path2 var(--time) linear infinite forwards;
+}
+.muha-path-1{
+    animation: path1 var(--time) linear infinite forwards;
+}
+
+@keyframes path3 {
+    0%,100% {
+        rotate: -10deg;
+    }
+    50% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes path4 {
+    0%,100% {
+        rotate: 10deg;
+    }
+    50% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes path5 {
+    0%,100%{
+        rotate: -25deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+}
+
+@keyframes path6 {
+    0%,100%{
+        rotate: 25deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+}
+
+@keyframes path2 {
+    0%,100%{
+        rotate: -10deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+}
+
+@keyframes path1 {
+    0%,100%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+}
+
+.fly {
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.fly-item {
+    position: absolute;
+
+    height: max-content;
+    width: max-content;
+    transform-origin: center;
+    transition: all 1000ms linear;
+}
+
+.fly-item-1 {
+    top: 70%;
+    left: -10%;
+    rotate: 40deg;
+}
+.fly-item-2 {
+    top: 50%;
+    right: -10%;
+    rotate: -45deg;
+}
+.fly-item-3 {
+    top: 25%;
+    left: -10%;
+    rotate: 110deg;
+}
+.fly-item-4 {
+    top: 25%;
+    right: -10%;
+    rotate: -110deg;
+}
+.fly-item-5{
+    top: -10%;
+    right: 50%;
+    rotate: -140deg;
+}
+
+.fly-item-6 {
+    bottom: -10%;
+    right: 40%;
+    rotate: -30deg;
+}
+
+@keyframes fly1 {
+    0%{
+        top: 70%;
+        left: -10%;
+        rotate: 40deg;
+    }
+    50%{
+        top: 50%;
+        left: 50%;
+        rotate: 40deg;
+    }
+    100%{
+        top: 25%;
+        left: 110%;
+        rotate: 35deg;
+    }
+}
+
+@keyframes fly2 {
+    0%{
+        top: 20%;
+        right: -10%;
+    }
+    50%{
+        top: 2%;
+        right: 50%;
+    }
+    100%{
+        top: -10%;
+        right: 110%;
+    }
+}
+
+@keyframes fly3 {
+    0%{
+        top: 70%;
+        left: -10%;
+        rotate: 110deg;
+    }
+    50%{
+        top: 75%;
+        left: 50%;
+        rotate: 115deg;
+    }
+    100%{
+        top: 85%;
+        left: 110%;
+        rotate: 120deg;
+    }
+}
+
+@keyframes fly4 {
+    0%{
+        top: 35%;
+        right: -10%;
+        rotate: -110deg;
+    }
+    50%{
+        top: 70%;
+        right: 50%;
+        rotate: -115deg;
+    }
+    100%{
+        top: 90%;
+        right: 110%;
+        rotate: -120deg;
+    }
+}
+
+@keyframes fly5 {
+    0%{
+        top: -10%;
+        right: 50%;
+    }
+    50%{
+        top: 50%;
+        right: 70%;
+    }
+    100%{
+        top: 100%;
+        right: 110%;
+    }
+}
+
+@keyframes fly6 {
+    0%{
+        bottom: -10%;
+        right: 40%;
+    }
+    50%{
+        bottom: 50%;
+        right: 70%;
+    }
+    100%{
+        bottom: 110%;
+        right: 110%;
+    }
+}
+
+.specialization-links:has(.fly-hover:hover) {
+    .fly-item-1{
+        animation: fly1 3s linear forwards;
+    }
+    .fly-item-2{
+        animation-delay: .2s;
+        animation: fly2 3s linear forwards;
+    }
+    .fly-item-3{
+        animation-delay: .3s;
+        animation: fly3 3s linear forwards;
+    }
+    .fly-item-4{
+        animation-delay: .4s;
+        animation: fly4 3s linear forwards;
+    }
+    .fly-item-5{
+        animation-delay: .5s;
+        animation: fly5 3s linear forwards;
+    }
+    .fly-item-6{
+        animation-delay: 1s;
+        animation: fly6 4s linear forwards;
+    }
+}

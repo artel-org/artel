@@ -1,0 +1,167 @@
+.mush{
+    --time:.3s;
+    // animation: mushSkew .5s linear infinite;
+}
+.mush{
+        width: 600px;
+}
+
+.mush-path{
+    transform-origin: center;
+}
+
+.mush-path-1{
+    animation: mushpath1 var(--time) linear infinite;
+}
+.mush-path-6 {
+    animation: mushpath6 var(--time) linear infinite;
+}
+.mush-path-2 {
+    animation: mushpath2 var(--time) linear infinite;
+}
+.mush-path-4{
+    // animation: mushpath4 var(--time) linear infinite;
+}
+.mush-path-5{
+    animation: mushpath5 var(--time) linear infinite;
+}
+.mush-path-3{
+    animation: mushpath3 var(--time) linear infinite;
+}
+
+@keyframes mushpath6 {
+    0%,100%{
+     /* transform: translateY(2px); */
+        /* transform: skewY(-10deg); */
+        transform: translate(-1px, 5px);
+    }
+    50%{
+        /* transform: skewY(3deg); */
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes mushpath3 {
+    0%, 100%{
+        /* transform: rotate(0deg) translateY(0px); */
+        /* transform: skew(0deg, 0deg); */
+        transform: translate(0px, -7px);
+    }
+    50%{
+        /* transform: rotate(20deg) translateY(-5px); */
+        /* transform: skew(-10deg, 12deg); */
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes mushpath5 {
+    0%,100%{
+        /* transform: translate(-1px, 0px); */
+        /* transform: skewX(-1deg); */
+        transform: translate(0px, 0px);
+    }
+    50%{
+        /* transform: skewX(-10deg); */
+        transform: translate(6px, 2px);
+    }
+}
+
+@keyframes mushpath2 {
+    0%,100%{
+        /* transform: rotate(7deg) translateY(-5px);  */
+        /* transform: skew(-12deg, -2deg); */
+        transform: translate(0px, 0px);
+    }
+    50%{
+        /* transform: rotate(0deg) translateX(0px); */
+        /* transform: skew(0deg, 0deg); */
+        transform: translate(-10px, 0px);
+    }
+}
+
+@keyframes mushpath4 {
+    0%,100%{
+        transform: skew(0deg, -10deg);
+    }
+    50%{
+        transform: skew(0deg, 0deg);
+    }
+}
+
+@keyframes mushSkew {
+    0%,100%{
+        transform: skewY(8deg) skewX(8deg);
+    }
+    50%{
+        transform: skewY(0deg) skewX(0deg);
+    }
+}
+
+.rodents{
+    position: absolute;
+    inset: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.rodents-item {
+    position: absolute;
+
+    height: max-content;
+    width: max-content;
+    transform-origin: center;
+    transition: all 1000ms linear;
+
+    svg path {
+        fill: #168c81;
+    }
+}
+
+.rodents-item-1 {
+    rotate: 100deg;
+    top: 30%;
+    left: -40%;
+}
+
+.rodents-item-2 {
+    rotate: -10deg;
+    bottom: -40%;
+    left: 30%;
+}
+
+@keyframes rodents1 {
+    0%{
+        top: 40%;
+        left: -40%;
+    }
+    20%{
+        top: -50%;
+        left: 100%;
+    }
+    100%{
+        top: -100%;
+        left: 120%;
+    }
+}
+
+@keyframes rodents2 {
+    0%{
+        bottom: -40%;
+        left: 30%;
+    }
+    100%{
+        left: -30%;
+        bottom: 70%;
+    }
+}
+
+.specialization-links:has(.rodents-hover:hover) {
+    .rodents-item-1{
+        animation: rodents1 10s linear forwards;
+    }
+
+    .rodents-item-2{
+        animation: rodents2 1.5s linear forwards;
+    }
+}

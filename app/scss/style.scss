@@ -1,0 +1,99 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'normalize';
+@import 'libs';
+@import 'global';
+@import 'mixins';
+@import 'hover';
+
+// loader
+@import './components/loader';
+// header
+@import './components/header';
+// footer
+@import './components/footer';
+@import './components/footerDesign';
+// top
+@import './components/top';
+@import './components/topPageAnimation';
+@import './components/topDesignPage';
+// specialization
+@import './components/specialization';
+// reliable
+@import './components/reliable';
+// work 
+@import './components/work';
+// project
+@import './components/project';
+// clients
+@import './components/clients';
+// save money 
+@import './components/saveMoney';
+// what doing 
+@import './components/whatDoing';
+// result work
+@import './components/resultWork';
+// dragn drop images
+@import './components/sliderDragImage';
+// top page
+@import './components/topPage';
+// type work
+@import './components/typeWork';
+// step construction
+@import './components/stepsConstruction';
+// budget
+@import './components/budget';
+// animation menu
+@import './components/budgetAnimation';
+// quality standart
+@import './components/qualityStandards';
+// info company
+@import './components/infoCompany';
+// service 
+@import './components/services';
+// specialization links
+@import './components/specializationLinks';
+// info prices
+@import './components/infoPrices';
+// stage work
+@import './components/stageWork';
+// comercial-style
+@import './components/comercialStyle';
+// about 
+@import './components/about';
+// partners 
+@import './components/partners';
+// logo tarakans animation
+@import './components/logoTarakans';
+// ants animation
+@import './components/ants';
+// 3d model 
+@import './components/3dModel';
+// tarakans animate
+@import './components/tarakans';
+// // mush animation
+@import './components/mush';
+// guk 
+@import './components/bug';
+// muha
+@import './components/fly';
+// birds 
+@import './components/birds';
+// slizen
+@import './components/slizen';
+// guk2
+@import './components/guk2';
+// babochka
+@import './components/babochka';
+// design menu
+@import './components/designMenu';
+// feedback modal
+@import "./components/modalFeedback";
+// engineering page
+@import "./components/engineering";
+
+
+.loader {
+    display: none;
+}
