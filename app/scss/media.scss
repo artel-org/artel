@@ -355,6 +355,8 @@
     .services__bottom{
         gap: 40px;
     }
+
+
 }
 
 @media (max-width: 992px) {
@@ -576,6 +578,29 @@
     .design-menu__link{
         font-size: 50px;
     }
+
+        .designing-block {
+        
+        &__item {
+            margin-top: -7vw;
+            max-width: 90%;
+            margin-left: 2vw;
+
+            svg {
+                width: calc((1vw + 1vh) * 19.25);
+                height: calc((1vw + 1vh) * 5);
+            }
+        }
+
+        &__title {
+            
+            svg {
+                width: calc((1vw + 1vh) * 50);
+                height: calc((1vw + 1vh) * 8);
+            }
+        }
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -800,6 +825,8 @@
     .modal-feedback__inner{
         max-width: calc(100vw - calc(var(--container-padding) * 2));
     }
+
+
 }
 
 @media (max-width: 650px) {
@@ -2789,6 +2816,30 @@
             left: -226px;
         }
     }
+
+    .designing-block {
+        
+        &__item {
+            margin-top: -7vw;
+            max-width: 90%;
+            margin-left: 2vw;
+
+            svg {
+                width: calc((1vw + 1vh) * 19.25);
+                height: calc((1vw + 1vh) * 5);
+            }
+        }
+
+        &__title {
+            
+            svg {
+                width: calc((1vw + 1vh) * 40);
+                height: calc((1vw + 1vh) * 9);
+            }
+        }
+    }
+
+
     .about{
         background: url(../image/no-deleted/about-bg_mob.svg);
         background-repeat: no-repeat;
@@ -2869,4 +2920,27 @@
         width: 110px;
         height: 110px;
     }
+
+    .designing-block {
+        
+        &__item {
+            margin-top: -7vw;
+            max-width: 90%;
+            margin-left: 2vw;
+
+            svg {
+                width: calc((1vw + 1vh) * 19.25);
+                height: calc((1vw + 1vh) * 5);
+            }
+        }
+
+        &__title {
+            
+            svg {
+                width: calc((1vw + 1vh) * 40);
+                height: calc((1vw + 1vh) * 8);
+            }
+        }
+    }
+
 }
