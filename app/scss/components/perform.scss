@@ -52,6 +52,65 @@
             height: 1px;
         }
     }
+
+    &__vector {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+        &__grass-six-petals {
+            margin-left: 73.6vw;
+            margin-top: calc((1vw + 1vh) * -0.4);
+        }
+
+        &__house {
+            margin-left: calc((1vw + 1vh) * 3.5);
+            margin-top: calc((1vw + 1vh) * 1.25);
+        }
+
+        &__arm {
+            margin-left: calc((1vw + 1vh) * 10.5);
+            margin-top: calc((1vw + 1vh) * -3);
+        }
+
+        &__grass-three-petals {
+            position: absolute;
+            margin-left: calc((1vw + 1vh) * 4.5);
+            margin-top: calc((1vw + 1vh) * 5.4);
+        }
+
+        &__grass-five {
+            position: absolute;
+            margin-left: 88.9vw;
+            margin-top: calc((1vw + 1vh) * 17.6);
+        }
+
+        &__grass-five-petals {
+            margin-top:  calc((1vw + 1vh) * 6.4);
+            margin-left: calc((1vw + 1vh) * 10.6);
+        }
+
+        &__flower {
+            position: absolute;
+            margin-left: 84.5vw;
+            margin-top: calc((1vw + 1vh) * 26);
+        }
+        &__grass-three {
+            position: absolute;
+            margin-left: 75.8vw;
+            margin-top: calc((1vw + 1vh) * 35.8);
+        }
+
+        &__face {
+            margin-left: 76vw;
+            margin-top: calc((1vw + 1vh) * -35);
+        }
+
+        &__compact {
+            margin-left: 44.3vw;
+            margin-top: calc((1vw + 1vh) * 16.8);
+        }
+    }
 }
 
 .project-line {
