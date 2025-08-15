@@ -1,0 +1,186 @@
+.design-build {
+    margin-top: 95vh;
+
+    &__header {
+        margin-left: calc((1vw + 1vh) * 10.8);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__number-page {
+        display: block;
+        margin-bottom: calc((1vw + 1vh) * 2.9);
+    }
+
+    &__title {
+        font-family: var(--ff-Impact);
+        font-size: calc((1vw + 1vh) * 2.4);
+        letter-spacing: 1.23rem;
+        font-weight: 300;
+        line-height: 100%;
+        color: var(--color-white-fff);
+
+        h1{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__main {
+        margin-left: calc((1vw + 1vh) * 10.8);
+        margin-top: calc((1vw + 1vh) * 4);
+    }
+
+    &__basic-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2.4rem;
+        font-family: var(--ff-Rurik);
+
+        p {
+            margin-left: calc((1vw + 1vh) * 2);
+            font-size: calc((1vw + 1vh) * 1.8);
+            color: var(--color-gray-303030);
+            border: 1px #fff;
+            -webkit-text-stroke: 0.6px var(--color-white-fff);
+        }
+    }
+
+    &__footer {
+        margin-left: calc((1vw + 1vh) * 10.8);
+        margin-top: calc((1vw + 1vh) * 1);
+
+        p {
+            font-size: calc((1vw + 1vh) * 0.85);
+            font-family: var(--ff-Roboto);
+            line-height: 130%;
+            color: var(--color-white-fff);
+        }
+
+        &__line {
+            margin-top: calc((1vw + 1vh) * 1.3);
+            width: calc((1vw + 1vh) * 34);
+            background-color: #fff;
+            height: 1px;
+        }
+    }
+
+    &__vectors {
+        position: absolute; 
+        display: flex;
+        flex-direction: column;
+
+        &__flowers-head {
+            margin-top: calc((1vw + 1vh) * 0.8);
+            margin-left: calc((1vw + 1vh) * 3.2);
+        }
+
+        &__flowers-big {
+            margin-top: calc((1vw + 1vh) * 14.2);
+            margin-left: calc((1vw + 1vh) * 3.8);
+        }
+
+        &__flowers-small {
+            margin-top: calc((1vw + 1vh) * 3.8);
+        }
+
+        &__grass-four-petals {
+            margin-top: calc((1vw + 1vh) * 0.3);
+            margin-left: calc((1vw + 1vh) * 22.7);
+        }
+
+        &__grass {
+            margin-left: 89.9vw;
+            margin-top: calc((1vw + 1vh) * -0.5);
+        }
+
+        &__octopus {
+            margin-top: calc((1vw + 1vh) * 5.9);
+            position: absolute;
+            margin-left: 52.6vw;
+        }
+
+        &__octopus-flower {
+            position: absolute;
+            margin-top: calc((1vw + 1vh) * 9.2);
+            margin-left: 88.5vw;
+        }
+
+        &__grass-five-petals {
+            margin-top: calc((1vw + 1vh) * 12.1);
+            margin-left: calc((1vw + 1vh) * 7.4);
+        }
+        
+        &__grass-two {
+            margin-left: calc((1vw + 1vh) * 18.3);
+            margin-top: calc((1vw + 1vh) * -0.3);
+        }
+
+        &__flowers-small {
+            margin-top: calc((1vw + 1vh) * -4.7);
+            margin-left: calc((1vw + 1vh) * 46.6);
+        }
+
+        &__compact {
+            margin-left: calc((1vw + 1vh) * 29.55);
+            margin-top: calc((1vw + 1vh) * -4.2);
+        }
+
+        &__flowers-four-down {
+            margin-left: 87.6vw;
+            margin-top: calc((1vw + 1vh) * -6.5);
+        }
+    }
+}
+
+.crossed-out {
+    display: flex;
+    position: relative;
+
+    &__line {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        left: 0;
+        height: 1px;
+        background-color: #fff;
+    }
+}
+
+.office {
+    width: 16%;
+}
+
+.med {
+    width: 45%;
+}
+
+.rest {
+    width: 22.5%;
+}
+
+.bank {
+    width: 16%;
+}
+
+.premises {
+    width: 53%;
+}
+
+.product {
+    width: 21%;
+}
+
+.hostel {
+    width: 23%;
+}
+
+.beauty {
+    width: 50%;
+}
+
+.busines {
+    width: 48%;
+}

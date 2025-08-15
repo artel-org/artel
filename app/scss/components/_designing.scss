@@ -167,3 +167,40 @@
     margin-left: calc((1vw + 1vh) * 50.4);
     margin-top: calc((1vw + 1vh) * 15.5);
 }
+
+.designing-grass {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: calc((1vw + 1vh) * 18);
+
+    &__six-petals {
+        margin-left: calc((1vw + 1vh) * 6.6);
+        margin-top: calc((1vw + 1vh) * 1.2);
+
+        &__left {
+            margin-left: calc((1vw + 1vh) * 2.5);
+            margin-top: calc((1vw + 1vh) * 0.3);
+        }
+    }
+
+    &__two-petals {
+        margin-left: calc((1vw + 1vh) * 5.2);
+        margin-top: calc((1vw + 1vh) * 4.6);
+    }
+
+    &__five-petals {
+        margin-left: calc((1vw + 1vh) * 13.5);
+        margin-top: calc((1vw + 1vh) * 6);
+
+        &__left {
+            margin-left: calc((1vw + 1vh) * 6.8);
+            margin-top: calc((1vw + 1vh) * 5.2);
+        }
+    }
+
+    &__four-petals {
+        margin-left: calc((1vw + 1vh) * 10.7);
+        margin-top: calc((1vw + 1vh) * 4.8);
+    }
+}

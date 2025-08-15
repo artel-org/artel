@@ -1,0 +1,75 @@
+.perform {
+    margin-top: calc((1vw + 1vh) * 14);
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 32vw;
+
+        &__number-page {
+            margin-top: calc((1vw + 1vh) * 2.6);
+        }
+
+        &__title {
+            margin-top: calc((1vw + 1vh) * 0.9);
+        }
+    }
+
+    &__main {
+        margin-top: calc((1vw + 1vh) * 2.5);
+    }
+
+    &__basic-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2.4rem;
+        font-family: var(--ff-Rurik);
+
+        p {
+            margin-left: calc((1vw + 1vh) * 2);
+            font-size: calc((1vw + 1vh) * 1.8);
+            color: var(--color-gray-303030);
+            border: 1px #fff;
+            -webkit-text-stroke: 0.6px var(--color-white-fff);
+        }
+    }
+
+    &__footer {
+        margin-top: calc((1vw + 1vh) * 1);
+
+        p {
+            font-size: calc((1vw + 1vh) * 0.85);
+            font-family: var(--ff-Roboto);
+            line-height: 130%;
+            color: var(--color-white-fff);
+        }
+
+        &__line {
+            margin-top: calc((1vw + 1vh) * 1.3);
+            width: calc((1vw + 1vh) * 34);
+            background-color: #fff;
+            height: 1px;
+        }
+    }
+}
+
+.project-line {
+    width: 58%;
+}
+
+.decision {
+    width: 71%;
+}
+
+.arshi {
+    width: 78%;
+}
+
+.inj {
+    width: 50%;
+}
+
+.docu {
+    width: 49%;
+}

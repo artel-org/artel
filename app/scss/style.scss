@@ -92,9 +92,12 @@
 @import "./components/modalFeedback";
 // engineering page
 @import "./components/engineering";
-// engineering page
+// designing page
 @import "./components/designing";
-
+// design-build page
+@import "./components/design-build";
+// perform page
+@import "./components/perform.scss";
 
 .loader {
     display: none;
